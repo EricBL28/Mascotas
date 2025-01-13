@@ -13,6 +13,7 @@ fondoBlancoLog:{
     borderRadius: 30,
     marginTop: 55,
     flex: 1,
+    width: '100%',
 },
 tituloLogin:{
     fontSize: 30,
@@ -79,5 +80,9 @@ ContenedorbotonTexto:{
 },
 image:{
     width: 200,
+},
+gatitoImage:{
+    width: 80,
+    
 },
 })

@@ -18,18 +18,12 @@ const Login = () => {
 
       <View style={GlobalStyles.fondoBlancoLog}>
         
-        <View style={{height:100, backgroundColor:'red', width:'100%' , flexDirection:'row'}}>
+ 
+        <Image 
+          source={require("../../assets/images/perroGatoJuntos.png")}
+          style={{width: 200, height:200, backgroundColor:'red', position:'relative'}}
+        ></Image>
 
-          <Image 
-            source={require("../../assets/images/perrito.png")}
-            style={{width: 90, height:90, position:'relative'}}
-          ></Image>
-          <Image 
-            source={require("../../assets/images/gatito.png")}
-            style={{width: 80, height:80}}
-          ></Image>
-
-        </View>
 
         <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
           

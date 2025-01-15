@@ -14,6 +14,7 @@ fondoBlancoLog:{
     marginTop: 55,
     flex: 1,
     width: '100%',
+    
 },
 tituloLogin:{
     fontSize: 30,
@@ -31,7 +32,7 @@ PetConnect:{
 },
 textoAccede:{
     fontSize: 30,
-    marginTop: 140,
+    marginTop: 10,
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
@@ -41,7 +42,7 @@ input: {
     borderRadius: 30,
     padding: 10,
     fontSize: 16,
-    margin: 20,
+    margin: 15,
     marginBottom: 15,
     backgroundColor: Colors.orangeInput,
 

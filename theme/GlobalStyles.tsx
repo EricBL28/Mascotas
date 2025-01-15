@@ -32,20 +32,20 @@ PetConnect:{
 },
 textoAccede:{
     fontSize: 30,
-    marginTop: 10,
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueText,
+    backgroundColor: Colors.orangeInput,
+
 },
 input: {
     borderRadius: 30,
     padding: 10,
     fontSize: 16,
-    margin: 15,
+    margin: 10,
     marginBottom: 15,
     backgroundColor: Colors.orangeInput,
-
 },
 boton:{
     width: 150,
@@ -79,17 +79,15 @@ ContenedorbotonTexto:{
     width: '100%', // Asegura que el contenedor no exceda el ancho de la pantalla
     marginTop: 20, // Espaciado superior
 },
-image:{
-    width: 200,
-},
 pataNaranjaDerecha:{
     width: 40,
     height:40,
-    margin:0,
+    backgroundColor:'red',
 },
 pataNaranjaIzq:{
     width: 40,
     height:40,
-    margin:0,
+    backgroundColor:'red',
+
 },
 })

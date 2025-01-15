@@ -20,8 +20,10 @@ const Login = () => {
         
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
-          style={{width: 270, height:220, position:'relative', left:69, bottom:56, marginBottom:2}}
+          style={{width: 270, height:220, position:'relative', left:69, top:-47, backgroundColor:'red'}}
         ></Image>
+        
+        <View style={{backgroundColor:'red'}}>
 
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
@@ -32,20 +34,24 @@ const Login = () => {
             source={require("../../assets/images/huellaNaranja.png")}
             style={GlobalStyles.pataNaranjaIzq}
           ></Image>
-          
-        <TextInput
-          style={GlobalStyles.input}
-          placeholder="Email"
-        />
+            
+          <TextInput
+            style={GlobalStyles.input}
+            placeholder="Email"
+          />
 
-        <TextInput
-          style={GlobalStyles.input}
-          placeholder="Contraseña"
-        />
-        <View style={GlobalStyles.ContenedorbotonTexto}>
-            <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-            <BotonAcceder label='Acceder'></BotonAcceder>
+          <TextInput
+            style={GlobalStyles.input}
+            placeholder="Contraseña"
+          />
+          <View style={GlobalStyles.ContenedorbotonTexto}>
+              <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
+              <BotonAcceder label='Acceder'></BotonAcceder>
+          </View>
+
+
         </View>
+        
         
   
       </View>

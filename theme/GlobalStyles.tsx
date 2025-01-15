@@ -82,8 +82,14 @@ ContenedorbotonTexto:{
 image:{
     width: 200,
 },
-gatitoImage:{
-    width: 80,
-    
+pataNaranjaDerecha:{
+    width: 40,
+    height:40,
+    margin:0,
+},
+pataNaranjaIzq:{
+    width: 40,
+    height:40,
+    margin:0,
 },
 })

@@ -9,7 +9,7 @@ const Login = () => {
       <View style={{height:100, width:'100%' , position:'absolute', top:13}}>
         <Image 
           source={require("../../assets/images/logo_2.png")}
-          style={{width: 80, height:80, position:'relative', left:'77%'}}
+          style={{width: 60, height:60, position:'relative', left:'77%'}}
         ></Image>
       </View>
 
@@ -18,19 +18,25 @@ const Login = () => {
 
       <View style={GlobalStyles.fondoBlancoLog}>
         
- 
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
-          style={{width: 200, height:200, backgroundColor:'red', position:'relative'}}
+          style={{width: 270, height:220, position:'relative', left:69, bottom:56, marginBottom:2}}
         ></Image>
 
-
-        <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
+          <Image 
+            source={require("../../assets/images/huellaNaranja.png")}
+            style={GlobalStyles.pataNaranjaDerecha}
+          ></Image>
+          <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
+          <Image 
+            source={require("../../assets/images/huellaNaranja.png")}
+            style={GlobalStyles.pataNaranjaIzq}
+          ></Image>
           
-          <TextInput
-            style={GlobalStyles.input}
-            placeholder="Email"
-          />
+        <TextInput
+          style={GlobalStyles.input}
+          placeholder="Email"
+        />
 
         <TextInput
           style={GlobalStyles.input}

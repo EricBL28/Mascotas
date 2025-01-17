@@ -20,10 +20,10 @@ const Login = () => {
         
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
-          style={{width: 270, height:220, position:'relative', left:69, top:-47, backgroundColor:'red'}}
+          style={GlobalStyles.perroGato}
         ></Image>
-        
-        <View style={{backgroundColor:'red'}}>
+
+        <View style={{ flexDirection: 'column', flexWrap: 'wrap', bottom:50}}>
 
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
@@ -55,6 +55,7 @@ const Login = () => {
         
   
       </View>
+
       <Text style ={GlobalStyles.olvidarContra}>¿Olvidaste la contraseña?</Text>
     </View>
 

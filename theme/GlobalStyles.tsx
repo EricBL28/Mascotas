@@ -11,10 +11,10 @@ contenedor:{
 fondoBlancoLog:{
     backgroundColor: Colors.white,
     borderRadius: 30,
-    marginTop: 55,
     flex: 1,
     width: '100%',
-    
+    top:50,
+    marginBottom:59,
 },
 tituloLogin:{
     fontSize: 30,
@@ -26,10 +26,21 @@ tituloLogin:{
 },
 PetConnect:{
     textAlign: "center",
-    fontSize: 54,
+    fontSize: 50,
     fontFamily:'WendyOne',
     color: Colors.white,
 },
+perroGato:{
+    width: 250, 
+    height:210, 
+    position:'relative', 
+    left:69, 
+    top:-47, 
+    backgroundColor:'red',
+    marginBottom: 0,
+    paddingBottom: 0,
+}
+,
 textoAccede:{
     fontSize: 30,
     fontWeight: 'bold',
@@ -61,9 +72,9 @@ boton:{
 olvidarContra:{
     fontSize: 18,
     color: Colors.white,
-    marginTop: 20,
     marginBottom: 25,
     fontFamily:'Poppins',
+    textDecorationLine:"underline"
 
 },
 textRegistrar:{
@@ -71,23 +82,24 @@ textRegistrar:{
     color: Colors.blueText,
     textAlign: "left", 
     marginLeft: 10,  
+    textDecorationLine:"underline"
+
 },
 ContenedorbotonTexto:{
-    flexDirection: 'row', // Alinea los elementos horizontalmente
-    alignItems: 'center', // Alinea verticalmente al centro
-    flexWrap: 'wrap', // Permite que los elementos pasen a la siguiente línea si es necesario
-    width: '100%', // Asegura que el contenedor no exceda el ancho de la pantalla
-    marginTop: 20, // Espaciado superior
+    flexDirection: 'row', 
+    flexWrap: 'wrap',
+    width: '100%', 
 },
 pataNaranjaDerecha:{
     width: 40,
     height:40,
     backgroundColor:'red',
+    
 },
 pataNaranjaIzq:{
     width: 40,
     height:40,
     backgroundColor:'red',
-
+    top:1
 },
 })

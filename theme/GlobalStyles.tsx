@@ -175,17 +175,24 @@ textoAccedeARefugio:{
 },
 //menu----------------------------------------
 textoSeccion:{
-    marginLeft: 50,
     color: Colors.blueText,
     fontFamily:'Poppins',
     fontSize: 30,
     textAlign:'left',
+    margin: 20,
 },
 seccionesMenu:{
     color: Colors.blueText,
     fontFamily:'Poppins',
     textDecorationLine:'underline',
     fontSize: 25,
-}
+    //he puesto el margen para que parezca centrado pero no se como centrarlo con las imagenes
+    marginBottom: 46,
+},
+imagenesMenu:{
+    width:60,
+    height:60,
+    margin:10,
+},
 
 })

@@ -44,9 +44,9 @@ const Login = () => {
             style={GlobalStyles.input}
             placeholder="Contraseña"
           />
-          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%', position:'absolute'}}>
+          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%'}}>
               <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <Boton label='Acceder' width={150} color='naranja' style={{position:'relative', marginBottom:20}}></Boton>
+              <Boton label='Acceder' width={150} color='naranja' style={{position:'absolute', right:40, bottom:60}}></Boton>
           </View>
 
 

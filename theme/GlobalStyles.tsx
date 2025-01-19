@@ -62,9 +62,6 @@ perroGato:{
     position:'relative', 
     left:69, 
     top:-47, 
-    backgroundColor:'red',
-    marginBottom: 0,
-    paddingBottom: 0,
 }
 ,
 textoAccede:{

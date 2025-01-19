@@ -34,3 +34,4 @@ export const Boton = ({label, width, color, onPress}:Props) => {
         </Pressable>
     )
 };
+export default Boton

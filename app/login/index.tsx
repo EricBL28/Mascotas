@@ -29,12 +29,12 @@ const Login = () => {
 
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataNaranjaArriba}
+            style={GlobalStyles.pataArriba}
           ></Image>
           <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataNaranjaAbajo}
+            style={GlobalStyles.pataAbajo}
           ></Image>
             
           <TextInput
@@ -46,11 +46,9 @@ const Login = () => {
             style={GlobalStyles.input}
             placeholder="Contraseña"
           />
-          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%'}}>
+          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%',  columnGap: 108, alignContent:'center'}}>
               <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <Boton label='Acceder' width={150} backgroundColor='naranja'>
-
-              </Boton>
+              <Boton label='Acceder' backgroundColor='naranja'></Boton>
           </View>
 
 

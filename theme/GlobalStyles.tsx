@@ -29,7 +29,9 @@ botonNaranja:
     backgroundColor: Colors.orangeButton,
     color:Colors.blueText,
     textAlign:'center',
-    padding: 10,
+    padding: 15,
+    width:'auto',
+    height: 59 ,
 },
 botonGris:
 {
@@ -38,7 +40,7 @@ botonGris:
     borderBottomColor: Colors.white,
     width:'auto',
     borderWidth: 4,
-    height:59,
+    height: 59 ,
     textAlign:'center',
     padding: 10,
     margin:10,
@@ -54,7 +56,7 @@ fondoBlancoLog:{
     marginBottom:59,
 },
 tituloLogin:{
-    fontSize: 30,
+    fontSize: 29,
     marginTop: 100,
     marginBottom:3,
     textAlign: "center",
@@ -63,7 +65,7 @@ tituloLogin:{
 },
 PetConnect:{
     textAlign: "center",
-    fontSize: 50,
+    fontSize: 49,
     fontFamily:'WendyOne',
     color: Colors.white,
 },
@@ -81,7 +83,7 @@ textoAccede:{
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueText,
-    backgroundColor: Colors.orangeInput,
+    //backgroundColor: Colors.orangeInput,
 },
 input: {
     borderRadius: 30,
@@ -94,10 +96,9 @@ input: {
 olvidarContra:{
     fontSize: 18,
     color: Colors.white,
-    marginBottom: 25,
+    marginBottom: 20,
     fontFamily:'Poppins',
-    textDecorationLine:"underline"
-
+    textDecorationLine:"underline",
 },
 textRegistrar:{
     fontSize: 20,
@@ -107,13 +108,14 @@ textRegistrar:{
     textDecorationLine:"underline"
 
 },
-pataNaranjaArriba:{
+//patas-------------------------------------------------------
+pataArriba:{
     width: 40,
     height:40,
     alignSelf:'flex-start',
     marginLeft: 14,
 },
-pataNaranjaAbajo:{
+pataAbajo:{
     width: 40,
     height:40,
     alignSelf:'flex-end',

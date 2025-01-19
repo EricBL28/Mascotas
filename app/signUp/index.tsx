@@ -23,12 +23,12 @@ const signUp = () => {
             
             <Image 
                 source={require("../../assets/images/huellaBlanca.png")}
-                style={GlobalStyles.pataNaranjaArriba}
+                style={GlobalStyles.pataArriba}
             ></Image>
             <Text style= {GlobalStyles.textoUnirse}>¡Hazte parte del refugio!</Text>
             <Image 
                 source={require("../../assets/images/huellaBlanca.png")}
-                style={GlobalStyles.pataNaranjaAbajo}
+                style={GlobalStyles.pataAbajo}
             ></Image>
 
             <TextInput

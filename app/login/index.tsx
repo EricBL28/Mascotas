@@ -2,6 +2,8 @@ import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
 import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
 import { Boton } from '../components/Boton';
+import { Redirect } from "expo-router";
+
 
 const Login = () => {
   return (
@@ -46,7 +48,11 @@ const Login = () => {
           />
           <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%'}}>
               <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <Boton label='Acceder' width={150} color='naranja' style={{position:'absolute', right:40, bottom:60}}></Boton>
+              <Boton label='Acceder' width={150} color='naranja' style={{position:'absolute', right:40, bottom:60}}>
+              <Redirect href="./signUp" />
+
+
+              </Boton>
           </View>
 
 

@@ -17,7 +17,6 @@ export const Boton = ({label, width, color, onPress}:Props) => {
     const accion = (() => {
         if (onPress) onPress()
         Haptics.selectionAsync();
-
     })
     
 

@@ -122,6 +122,13 @@ pataAbajo:{
     marginRight: 14,
 },
 //PANTALLA DE Registro------------------------------------
+contenedorGrisOscuro:{
+    backgroundColor:Colors.greyDark,
+    width: '100%',
+    borderRadius: 30,
+    position:'absolute',
+    bottom:50,
+}, 
 tituloRegistro:{
     fontSize: 30,
     top: 60,
@@ -138,13 +145,7 @@ PetConnectRegistro:{
     marginBottom: 20,
     top:50,
 },
-contenedorGrisOscuro:{
-    backgroundColor:Colors.greyDark,
-    width: '100%',
-    borderRadius: 30,
-    position:'absolute',
-    bottom:50,
-}, 
+
 textoUnirse:{
     color: Colors.white,
     fontSize: 29,
@@ -172,7 +173,19 @@ textoAccedeARefugio:{
     fontFamily:'Poppins',
     position: 'absolute'
 },
-
-
+//menu----------------------------------------
+textoSeccion:{
+    marginLeft: 50,
+    color: Colors.blueText,
+    fontFamily:'Poppins',
+    fontSize: 30,
+    textAlign:'left',
+},
+seccionesMenu:{
+    color: Colors.blueText,
+    fontFamily:'Poppins',
+    textDecorationLine:'underline',
+    fontSize: 25,
+}
 
 })

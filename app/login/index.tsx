@@ -5,7 +5,7 @@ import { Boton } from '../components/Boton';
 import { Redirect } from "expo-router";
 
 
-const Login = () => {
+const login = () => {
   return (
     <View style = {GlobalStyles.contenedor}>
       <View style={{height:100, width:'100%' , position:'absolute', top:13}}>
@@ -64,4 +64,4 @@ const Login = () => {
   )
 }
 
-export default Login
+export default login

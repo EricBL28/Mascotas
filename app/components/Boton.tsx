@@ -9,7 +9,7 @@ interface Props {
     onPress?: () => void;
 }
 
-interface Props extends TextProps{color: 'login' | 'signUp' | 'enviar' | 'nuevo' | 'darHogar'}
+interface Props extends TextProps{color: 'naranja' | 'gris'}
 
 
 export const Boton = ({label, width, color, onPress}:Props) => {
@@ -26,9 +26,9 @@ export const Boton = ({label, width, color, onPress}:Props) => {
             <Text 
                 style={[GlobalStyles.boton,
                     {width},
-                    color === 'login' ? GlobalStyles.botonNaranja:null, color ==='signUp' 
-                    ?GlobalStyles.botonGris:null, color === 'enviar' ?GlobalStyles.botonNaranja:null,
-                    color === 'nuevo' ?GlobalStyles.botonNaranja:null, color === 'darHogar' ?GlobalStyles.botonNaranja:null
+                    color === 'naranja' ? GlobalStyles.botonNaranja:null, color ==='gris' 
+                    ?GlobalStyles.botonGris:null, color === 'naranja' ?GlobalStyles.botonNaranja:null,
+                    color === 'naranja' ?GlobalStyles.botonNaranja:null, color === 'naranja' ?GlobalStyles.botonNaranja:null
                 ]}
                 onPress={accion}>{label}</Text>
         </Pressable>

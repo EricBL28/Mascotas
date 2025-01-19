@@ -100,11 +100,6 @@ textRegistrar:{
     textDecorationLine:"underline"
 
 },
-ContenedorbotonTexto:{
-    flexDirection: 'row', 
-    flexWrap: 'wrap',
-    width: '100%', 
-},
 pataNaranjaArriba:{
     width: 40,
     height:40,

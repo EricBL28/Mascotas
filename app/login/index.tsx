@@ -1,7 +1,7 @@
 import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
 import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
-import { BotonAcceder } from '../../components/BotonAcceder';
+import { Boton } from '../components/Boton';
 
 const Login = () => {
   return (
@@ -44,9 +44,9 @@ const Login = () => {
             style={GlobalStyles.input}
             placeholder="Contraseña"
           />
-          <View style={GlobalStyles.ContenedorbotonTexto}>
+          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%', position:'absolute'}}>
               <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <BotonAcceder label='Acceder'></BotonAcceder>
+              <Boton label='Acceder' width={150} color='naranja' style={{position:'relative', marginBottom:20}}></Boton>
           </View>
 
 

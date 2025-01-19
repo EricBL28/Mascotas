@@ -3,9 +3,15 @@ import { Colors } from "./Colors";
 
 export const GlobalStyles =  StyleSheet.create({
 contenedor:{
-    backgroundColor: Colors.blueLogin,
+    backgroundColor: Colors.blueDark,
     alignItems:  'center',
     flex: 1,
+},
+contenedorRegistro:{
+    backgroundColor: Colors.white,
+    alignItems:  'center',
+    flex: 1,
+    flexDirection: 'column',
 },
 //PANTALLA DE LOGIN------------------------------------
 fondoBlancoLog:{
@@ -90,16 +96,50 @@ ContenedorbotonTexto:{
     flexWrap: 'wrap',
     width: '100%', 
 },
-pataNaranjaDerecha:{
+pataNaranjaArriba:{
     width: 40,
     height:40,
-    backgroundColor:'red',
-    
+    alignSelf:'flex-start',
+    marginLeft: 14,
 },
-pataNaranjaIzq:{
+pataNaranjaAbajo:{
     width: 40,
     height:40,
-    backgroundColor:'red',
-    top:1
+    alignSelf:'flex-end',
+    marginRight: 14,
 },
+//PANTALLA DE Registro------------------------------------
+tituloRegistro:{
+    fontSize: 30,
+    marginTop: 100,
+    marginBottom:3,
+    textAlign: "center",
+    fontFamily:'Poppins',
+    color: Colors.blueDark,
+},
+PetConnectRegistro:{
+    textAlign: "center",
+    fontSize: 50,
+    fontFamily:'WendyOne',
+    color: Colors.blueDark,
+    marginBottom: 20,
+},
+contenedorNegro:{
+    backgroundColor:Colors.black,
+    width: '100%',
+    borderRadius: 30,
+    position:'fixed',
+}, 
+textoUnirse:{
+    color: Colors.white,
+    fontSize: 30,
+    fontWeight: 'bold',
+    textAlign: "center",
+    fontFamily:'Poppins',
+
+}
+
+
+
+
 })

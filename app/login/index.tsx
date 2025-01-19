@@ -27,12 +27,12 @@ const Login = () => {
 
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataNaranjaDerecha}
+            style={GlobalStyles.pataNaranjaArriba}
           ></Image>
           <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
           <Image 
             source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataNaranjaIzq}
+            style={GlobalStyles.pataNaranjaAbajo}
           ></Image>
             
           <TextInput

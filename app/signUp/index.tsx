@@ -55,7 +55,7 @@ const signUp = () => {
 
 
         </View>
-
+        <Text style={GlobalStyles.textoAccedeARefugio}>¿Tienes una cuenta? Accede al refugio</Text>
 
     </View>  )
 }

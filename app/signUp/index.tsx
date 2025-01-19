@@ -31,7 +31,11 @@ const signUp = () => {
         ></Image>
         <TextInput
             style={GlobalStyles.input}
-            placeholder="Contraseña"
+            placeholder="Nombre"
+        />
+         <TextInput
+            style={GlobalStyles.input}
+            placeholder="Email"
         />
          <TextInput
             style={GlobalStyles.input}
@@ -39,13 +43,12 @@ const signUp = () => {
         />
          <TextInput
             style={GlobalStyles.input}
-            placeholder="Contraseña"
+            placeholder="Repetir contraseña"
         />
-         <TextInput
-            style={GlobalStyles.input}
-            placeholder="Contraseña"
-        />
-                
+
+        <View>
+            
+        </View>     
             
 
 

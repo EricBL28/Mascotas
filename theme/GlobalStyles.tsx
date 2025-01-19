@@ -13,6 +13,26 @@ contenedorRegistro:{
     flex: 1,
     flexDirection: 'column',
 },
+//botones -------------------------------------------
+boton:{
+    width: 150,
+    height: 100,
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 20,
+    marginLeft: 200,
+    borderRadius: 30,
+    backgroundColor: Colors.orangeInput,
+    fontFamily:'Poppins',
+},
+botonNaranja:
+{
+    color: Colors.orangeButton,
+},
+botonGris:
+{
+    color: Colors.grey
+},
 //PANTALLA DE LOGIN------------------------------------
 fondoBlancoLog:{
     backgroundColor: Colors.white,
@@ -63,17 +83,6 @@ input: {
     margin: 10,
     marginBottom: 15,
     backgroundColor: Colors.orangeInput,
-},
-boton:{
-    width: 150,
-    height: 100,
-    textAlign: 'center',
-    padding: 10,
-    fontSize: 20,
-    marginLeft: 200,
-    borderRadius: 30,
-    backgroundColor: Colors.orangeInput,
-    fontFamily:'Poppins',
 },
 olvidarContra:{
     fontSize: 18,

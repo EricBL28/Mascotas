@@ -1,5 +1,6 @@
 import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
 import { GlobalStyles } from '../../theme/GlobalStyles';
+import Boton from '../components/Boton';
 
 const signUp = () => {
   return (
@@ -11,45 +12,46 @@ const signUp = () => {
             ></Image>
         </View>
 
-        <Text style={GlobalStyles.tituloRegistro}>Bienvenido a</Text>
+        <Text style={GlobalStyles.tituloRegistro}>Registate en</Text>
         <Text style={GlobalStyles.PetConnectRegistro}>Petconnect</Text>
         <Image 
           source={require("../../assets/images/perroGatoJuntos.png")}
-          style={GlobalStyles.perroGato}
+          style={GlobalStyles.perroGatoReg}
         ></Image>
 
-        <View style={GlobalStyles.contenedorNegro}>
+        <View style={GlobalStyles.contenedorGrisOscuro}>
             
-        <Image 
-            source={require("../../assets/images/huellaBlanca.png")}
-            style={GlobalStyles.pataNaranjaArriba}
-        ></Image>
-        <Text style= {GlobalStyles.textoUnirse}>¡Hazte parte del refugio!</Text>
-        <Image 
-             source={require("../../assets/images/huellaBlanca.png")}
-            style={GlobalStyles.pataNaranjaAbajo}
-        ></Image>
-        <TextInput
-            style={GlobalStyles.input}
-            placeholder="Nombre"
-        />
-         <TextInput
-            style={GlobalStyles.input}
-            placeholder="Email"
-        />
-         <TextInput
-            style={GlobalStyles.input}
-            placeholder="Contraseña"
-        />
-         <TextInput
-            style={GlobalStyles.input}
-            placeholder="Repetir contraseña"
-        />
+            <Image 
+                source={require("../../assets/images/huellaBlanca.png")}
+                style={GlobalStyles.pataNaranjaArriba}
+            ></Image>
+            <Text style= {GlobalStyles.textoUnirse}>¡Hazte parte del refugio!</Text>
+            <Image 
+                source={require("../../assets/images/huellaBlanca.png")}
+                style={GlobalStyles.pataNaranjaAbajo}
+            ></Image>
 
-        <View>
-            
-        </View>     
-            
+            <TextInput
+                style={GlobalStyles.input}
+                placeholder="Nombre"
+            />
+            <TextInput
+                style={GlobalStyles.input}
+                placeholder="Email"
+            />
+            <TextInput
+                style={GlobalStyles.input}
+                placeholder="Contraseña"
+            />
+            <TextInput
+                style={GlobalStyles.input}
+                placeholder="Repetir contraseña"
+            />    
+
+            <View style={GlobalStyles.contenedorBotones}>
+                <Boton label='Cancelar' backgroundColor='gris'></Boton>
+                <Boton label='Registrate' backgroundColor='gris'></Boton>
+            </View>
 
 
         </View>

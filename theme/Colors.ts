@@ -5,5 +5,6 @@ export const Colors = {
     blueText: "#194a6e",
     orangeInput: "#ff9f57",
     orangeButton: "#fea14e",
-    grey: '#899296'
+    grey: '#899296',
+    greyDark: '#363737',
 }as const;

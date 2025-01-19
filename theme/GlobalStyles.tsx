@@ -19,19 +19,28 @@ boton:{
     height: 100,
     textAlign: 'center',
     padding: 10,
-    fontSize: 20,
-    marginLeft: 200,
+    fontSize: 23,
     borderRadius: 30,
     backgroundColor: Colors.orangeInput,
     fontFamily:'Poppins',
 },
 botonNaranja:
 {
-    color: Colors.orangeButton,
+    backgroundColor: Colors.orangeButton,
+    color:Colors.blueText,
+    textAlign:'center',
+    padding: 10,
 },
 botonGris:
 {
-    color: Colors.grey
+    backgroundColor: Colors.grey,
+    color: Colors.white,
+    borderBottomColor: Colors.white,
+    width:'auto',
+    borderWidth: 4,
+    height:59,
+    textAlign:'center',
+    padding: 10,
 },
 //PANTALLA DE LOGIN------------------------------------
 fondoBlancoLog:{
@@ -71,7 +80,6 @@ textoAccede:{
     fontFamily:'Poppins',
     color: Colors.blueText,
     backgroundColor: Colors.orangeInput,
-
 },
 input: {
     borderRadius: 30,
@@ -112,11 +120,11 @@ pataNaranjaAbajo:{
 //PANTALLA DE Registro------------------------------------
 tituloRegistro:{
     fontSize: 30,
-    marginTop: 100,
-    marginBottom:3,
+    top: 80,
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueDark,
+
 },
 PetConnectRegistro:{
     textAlign: "center",
@@ -124,12 +132,14 @@ PetConnectRegistro:{
     fontFamily:'WendyOne',
     color: Colors.blueDark,
     marginBottom: 20,
+    top:67,
 },
-contenedorNegro:{
-    backgroundColor:Colors.black,
+contenedorGrisOscuro:{
+    backgroundColor:Colors.greyDark,
     width: '100%',
     borderRadius: 30,
-    position:'fixed',
+    position:'absolute',
+    bottom:60,
 }, 
 textoUnirse:{
     color: Colors.white,
@@ -138,7 +148,18 @@ textoUnirse:{
     textAlign: "center",
     fontFamily:'Poppins',
 
-}
+},
+perroGatoReg:{
+    width: 250, 
+    height:210, 
+    position:'absolute', 
+    alignSelf:'center',    
+    top: 185,
+},
+contenedorBotones:{
+    flexDirection:'row',
+    flexWrap: 'wrap',  
+},
 
 
 

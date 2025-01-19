@@ -48,9 +48,7 @@ const Login = () => {
           />
           <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%'}}>
               <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <Boton label='Acceder' width={150} color='naranja' style={{position:'absolute', right:40, bottom:60}}>
-              <Redirect href="./signUp" />
-
+              <Boton label='Acceder' width={150} backgroundColor='naranja'>
 
               </Boton>
           </View>

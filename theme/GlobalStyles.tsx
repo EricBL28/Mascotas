@@ -19,10 +19,11 @@ boton:{
     height: 100,
     textAlign: 'center',
     padding: 10,
-    fontSize: 23,
+    fontSize: 21,
     borderRadius: 30,
     backgroundColor: Colors.orangeInput,
     fontFamily:'Poppins',
+    fontWeight:'bold',
 },
 botonNaranja:
 {
@@ -193,6 +194,51 @@ imagenesMenu:{
     width:60,
     height:60,
     margin:10,
+},
+//comunidad animal-----------------------------------------------
+titulocomunidad:{
+    fontSize: 30, 
+    fontFamily:'Poppins',
+    color: Colors.white,
+    fontWeight:'bold', 
+    margin: 20,
+
+},
+cajaNaranja:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius:30,
+    width:'90%',
+    marginBottom: 20,
+},
+cajaBlanca:{
+    backgroundColor: Colors.white,
+    borderRadius:30,
+    width:'90%',
+},
+titulos:{
+    fontFamily:'Poppins',
+    fontSize:22,
+    fontWeight:'bold', 
+    color: Colors.blueText,
+    padding:10,
+    paddingBottom: 0,
+},
+parrafoPatitas:{
+    fontSize: 17,
+    fontFamily: 'Poppins',
+    textAlign:'justify',
+    padding: 10,
+    color: Colors.blueText,
+},
+textosTemas:{
+    backgroundColor: Colors.blueLight,
+    padding: 20,
+    borderRadius:30,
+    margin: 10, 
+    fontSize: 18,
+    fontFamily: 'Poppins',
+    fontWeight:'bold', 
+    textAlign:'justify',
 },
 
 })

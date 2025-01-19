@@ -6,11 +6,12 @@ import { GlobalStyles } from "@/theme/GlobalStyles";
 interface Props {
     label: string,
     backgroundColor: 'naranja' | 'gris',
+    width?:  number,
     onPress?: () => void;
 }
 
 
-export const Boton = ({label, backgroundColor, onPress}:Props) => {
+export const Boton = ({label, backgroundColor,width, onPress}:Props) => {
 
     const accion = (() => {
         if (onPress) onPress()
@@ -24,6 +25,7 @@ export const Boton = ({label, backgroundColor, onPress}:Props) => {
                 style={[GlobalStyles.boton,
                     backgroundColor === 'naranja' ? GlobalStyles.botonNaranja:null, backgroundColor ==='gris' 
                     ?GlobalStyles.botonGris:null,
+                    {width},
                 ]}
                 onPress={accion}>{label}</Text>
         </Pressable>

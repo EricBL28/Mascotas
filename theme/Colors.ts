@@ -7,4 +7,6 @@ export const Colors = {
     orangeButton: "#fea14e",
     grey: '#899296',
     greyDark: '#363737',
+    orangeContainer: '#fdb066',
+    blueLight: '#a6c6d7',
 }as const;

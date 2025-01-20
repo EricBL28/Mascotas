@@ -1,6 +1,8 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
-import { View, Text, Image} from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
 import Boton from "../components/Boton";
+import { Ionicons } from '@expo/vector-icons';
+
 
 
 const comunidad = () => {
@@ -18,13 +20,27 @@ const comunidad = () => {
             <View style={GlobalStyles.cajaBlanca}>
                 <Text style={GlobalStyles.titulos}>TEMAS DE DISCUSIÓN</Text>
 
-                <Text style={GlobalStyles.textosTemas}> Guías de alimentación B.A.R.F. para tu animal.</Text>
-                <Text style={GlobalStyles.textosTemas}>Consejos para sobrellevar la ola de calor con tu mascota.</Text>
-                <Text style={GlobalStyles.textosTemas}>Como empezar a adiestrar a tu mascota.</Text>
+                <Text style={GlobalStyles.textosTemas}> 
+                    Guías de alimentación B.A.R.F. para tu animal. 
+                    <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>12</Ionicons>
+                </Text>
+
+                <Text style={GlobalStyles.textosTemas}>Consejos para sobrellevar la ola de calor con tu mascota.
+                    <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>45</Ionicons>
+
+                </Text>
+                
+
+                <Text style={GlobalStyles.textosTemas}>Como empezar a adiestrar a tu mascota.
+                    <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>32</Ionicons>
+
+                </Text>
+                
 
 
-
-                <Boton label='Nuevo' backgroundColor="naranja" width={120}></Boton>
+                <View style={{alignItems:'flex-end', marginEnd:10,}}>
+                    <Boton label='Nuevo' backgroundColor="naranja" width={120}></Boton>
+                </View>
             </View>
         
         </View>

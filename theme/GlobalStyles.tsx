@@ -214,6 +214,7 @@ cajaBlanca:{
     backgroundColor: Colors.white,
     borderRadius:30,
     width:'90%',
+    flexDirection:'column',
 },
 titulos:{
     fontFamily:'Poppins',
@@ -239,6 +240,11 @@ textosTemas:{
     fontFamily: 'Poppins',
     fontWeight:'bold', 
     textAlign:'justify',
+},
+iconos:{
+    color: Colors.blueText,
+    fontSize: 29,
+    //no he podido poner los iconos a la izquierda
 },
 
 })

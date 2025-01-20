@@ -1,5 +1,6 @@
 import { StyleSheet } from "react-native";
 import { Colors } from "./Colors";
+import { reloadAppAsync } from "expo";
 
 export const GlobalStyles =  StyleSheet.create({
 contenedor:{
@@ -197,12 +198,13 @@ imagenesMenu:{
 },
 //comunidad animal-----------------------------------------------
 titulocomunidad:{
-    fontSize: 30, 
+    fontSize: 27, 
     fontFamily:'Poppins',
     color: Colors.white,
     fontWeight:'bold', 
     margin: 20,
-
+    position: 'relative',
+    alignSelf:'center'
 },
 cajaNaranja:{
     backgroundColor: Colors.orangeContainer,

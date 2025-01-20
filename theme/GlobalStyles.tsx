@@ -249,5 +249,36 @@ iconos:{
     fontSize: 25,
     //no he podido poner los iconos a la izquierda
 },
+//patitas al rescate-----------------------------------------------
+cajaAzul:{
+    backgroundColor: Colors.blueLight,
+    borderRadius:30,
+    marginLeft: 15,
+    marginRight: 15,
+
+},
+textoInicioUbi:{
+    color: Colors.blueText,
+    fontFamily: 'Poppins',
+    fontSize: 16,
+    padding:15,
+    fontWeight: 'bold',
+    marginLeft: 15,
+},
+textoinfoUbi:{
+    backgroundColor:'white', 
+    padding:14, 
+    borderRadius: 30,
+    color: Colors.blueText,
+    fontFamily: 'Poppins',
+    fontSize: 16,
+    margin:15,
+},
+inputRescate:{
+    backgroundColor: Colors.white,
+    borderRadius: 30,
+    margin: 15,
+    marginBottom: 0,
+},
 
 })

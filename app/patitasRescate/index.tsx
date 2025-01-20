@@ -37,7 +37,7 @@ const comunidad = () => {
 
 
             </View>
-            <TextInput placeholder="Describe la situación aquí..."/>
+            <TextInput placeholder="Describe la situación aquí..." style={GlobalStyles.input2Rescate}/>
 
         </View>
 

@@ -279,6 +279,17 @@ inputRescate:{
     borderRadius: 30,
     margin: 15,
     marginBottom: 0,
+    marginLeft: 15,
+    color: Colors.blueText,
+},
+input2Rescate:{
+    backgroundColor: Colors.white,
+    borderRadius: 30,
+    margin: 15,
+    color: Colors.blueText,
+    width:'85%',
+    height:  80,
+
 },
 
 })

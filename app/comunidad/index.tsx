@@ -9,6 +9,7 @@ const comunidad = () => {
     return (
         <View style={GlobalStyles.contenedor}>
             <Text style={GlobalStyles.titulocomunidad}>COMUNIDAD ANIMAL</Text>
+            
             <View style={GlobalStyles.cajaNaranja}>
                 <Text style={GlobalStyles.titulos}>PATITAS EN MARCHA (eventos)</Text>
                 <Text style={GlobalStyles.parrafoPatitas}>
@@ -25,18 +26,18 @@ const comunidad = () => {
                     <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>12</Ionicons>
                 </Text>
 
-                <Text style={GlobalStyles.textosTemas}>Consejos para sobrellevar la ola de calor con tu mascota.
+                <Text style={GlobalStyles.textosTemas}>
+                    Consejos para sobrellevar la ola de calor con tu mascota.
                     <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>45</Ionicons>
 
                 </Text>
                 
-
-                <Text style={GlobalStyles.textosTemas}>Como empezar a adiestrar a tu mascota.
+                <Text style={GlobalStyles.textosTemas}>
+                    Como empezar a adiestrar a tu mascota.
                     <Ionicons name="chatbubble-ellipses" style={GlobalStyles.iconos}>32</Ionicons>
 
                 </Text>
                 
-
 
                 <View style={{alignItems:'flex-end', marginEnd:10,}}>
                     <Boton label='Nuevo' backgroundColor="naranja" width={120}></Boton>

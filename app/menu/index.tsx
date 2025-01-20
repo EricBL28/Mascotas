@@ -1,12 +1,18 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
 import { View, Text, Image} from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 
 const menu = () => {
     return (
         <View style={GlobalStyles.contenedor}>
-            <Text style={{color:'white', fontSize:40, fontFamily: 'WendyOne', marginTop:30,}}>Petconnect</Text>
-        
+            <View style={{flexDirection: 'row', columnGap:24, alignItems:'center'}}>                
+                <Ionicons name="menu-outline" size={65} color="white" style={{position:'relative', top: 10}}/>
+                <Text style={{color:'white', fontSize:40, fontFamily: 'WendyOne', marginTop:30,}}>Petconnect</Text>
+                <Ionicons name="notifications-outline" size={50} color="white" style={{position:'relative', top: 10, right:5}}/>
+            </View>
+            
+
             <View style={{backgroundColor:'white', width:'95%', borderRadius:30}}>
 
                 <Text style={GlobalStyles.textoSeccion}>Secciones</Text>

@@ -240,10 +240,11 @@ textosTemas:{
     fontFamily: 'Poppins',
     fontWeight:'bold', 
     textAlign:'justify',
+    color: Colors.blueText,
 },
 iconos:{
     color: Colors.blueText,
-    fontSize: 29,
+    fontSize: 25,
     //no he podido poner los iconos a la izquierda
 },
 

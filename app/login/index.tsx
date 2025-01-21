@@ -15,8 +15,8 @@ const login = () => {
         ></Image>
       </View>
 
-      <Text style={GlobalStyles.tituloLogin}>Bienvenido a</Text>
-      <Text style={GlobalStyles.PetConnect}>Petconnect</Text>
+      <Text style={GlobalStyles.tituloLogin}>Bienvenido a </Text>
+      <Text style={GlobalStyles.PetConnect}>PetConnect</Text>
 
       <View style={GlobalStyles.fondoBlancoLog}>
         

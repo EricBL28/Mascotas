@@ -80,7 +80,7 @@ perroGato:{
 }
 ,
 textoAccede:{
-    fontSize: 30,
+    fontSize: 40,
     fontWeight: 'bold',
     textAlign: "center",
     fontFamily:'Poppins',
@@ -89,16 +89,17 @@ textoAccede:{
 },
 input: {
     borderRadius: 30,
-    padding: 10,
-    fontSize: 16,
+    padding: 15,
+    fontSize: 20,
     margin: 10,
-    marginBottom: 15,
+    marginBottom: 10,
     backgroundColor: Colors.orangeInput,
 },
 olvidarContra:{
-    fontSize: 18,
+    fontSize: 20,
     color: Colors.white,
     marginBottom: 20,
+    marginTop:10,
     fontFamily:'Poppins',
     textDecorationLine:"underline",
 },
@@ -115,13 +116,14 @@ pataArriba:{
     width: 40,
     height:40,
     alignSelf:'flex-start',
-    marginLeft: 14,
+    transform:[{rotate: '-45deg'}],
 },
 pataAbajo:{
     width: 40,
     height:40,
     alignSelf:'flex-end',
     marginRight: 14,
+    transform:[{rotate: '45deg'}],
 },
 //PANTALLA DE Registro------------------------------------
 contenedorGrisOscuro:{

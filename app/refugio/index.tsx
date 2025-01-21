@@ -26,7 +26,16 @@ const refugio = () => {
                     style={{width: 50, height:50, position:'relative', right:15}}
                 ></Image>
             </View>
-            
+            <View>
+                <Text>CATEGORÍAS</Text>
+
+            </View>
+            <input type="Búsqueda por nombre..." />
+            <View>
+
+
+                
+            </View>
 
         </View>
         

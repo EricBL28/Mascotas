@@ -85,7 +85,6 @@ textoAccede:{
     textAlign: "center",
     fontFamily:'Poppins',
     color: Colors.blueText,
-    //backgroundColor: Colors.orangeInput,
 },
 input: {
     borderRadius: 30,

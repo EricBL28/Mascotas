@@ -1,8 +1,8 @@
-import { View, Text, TextInput, StyleSheet, Image } from 'react-native';
+import { View, Text, TextInput, Image, Pressable } from 'react-native';
 import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
 import { Boton } from '../components/Boton';
-import { Link, Redirect } from "expo-router";
+import { router } from "expo-router";
 
 
 const login = () => {
@@ -47,10 +47,12 @@ const login = () => {
             placeholder="Contraseña"
           />
           <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%',  columnGap: 108, alignContent:'center'}}>
-              <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-              <Boton label='Acceder' backgroundColor='naranja' link='../menu'>   
-              
-              </Boton>
+            
+            <Pressable onPress={()=>{router.push('../signUp')}}>
+                <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
+            </Pressable>
+
+            <Boton label='Acceder' backgroundColor='naranja' link='../menu'></Boton>
           </View>
 
 

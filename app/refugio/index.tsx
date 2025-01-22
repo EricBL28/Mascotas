@@ -50,14 +50,17 @@ const refugio = () => {
             />
             <View style={{backgroundColor: 'white', width:'90%', borderRadius:30, 
                 flexDirection: "row", flexWrap: 'wrap', columnGap:10}}>
-                <View style={GlobalStyles.contenedorAnimales}>
-                    <Image 
-                        source={require("../../assets/images/Pluto.png")}
-                        style={{width: 155, height: 130, borderRadius:30, marginTop:5}}
-                    ></Image>
-                    <Text style={GlobalStyles.nombrePerro}>Pluto</Text>
-                    <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Macho (1.5 años)</Text>
-                </View>
+                <Pressable onPress={()=>{router.push('../refugio/perros')}}>
+                    <View style={GlobalStyles.contenedorAnimales}>
+                        <Image 
+                            source={require("../../assets/images/Pluto.png")}
+                            style={{width: 155, height: 130, borderRadius:30, marginTop:5}}
+                        ></Image>
+                        <Text style={GlobalStyles.nombrePerro}>Pluto</Text>
+                        <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Macho (1.5 años)</Text>
+                    </View>
+                </Pressable>
+                
                 <View style={GlobalStyles.contenedorAnimales}>
                     <Image 
                         source={require("../../assets/images/AfroShaggy.png")}
@@ -66,6 +69,7 @@ const refugio = () => {
                     <Text style={GlobalStyles.nombrePerro}>Afro y Shaggy</Text>
                     <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Machos (3 meses)</Text>
                 </View>
+
                 <View style={GlobalStyles.contenedorAnimales}>
                     <Image 
                         source={require("../../assets/images/Stelle.png")}
@@ -74,6 +78,7 @@ const refugio = () => {
                     <Text style={GlobalStyles.nombrePerro}>Stelle</Text>
                     <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Hembra (1.5 años)</Text>
                 </View>
+
                 <View style={GlobalStyles.contenedorAnimales}>
                     <Image 
                         source={require("../../assets/images/Eros.png")}

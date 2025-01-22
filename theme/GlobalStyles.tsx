@@ -329,4 +329,65 @@ nombrePerro:{
     paddingLeft: 20,
 },
 
+//perros----------------------------------
+nombreUbica:{
+    //contenedor del nombre y la ubicacion
+    flexDirection: 'row',
+    columnGap: 230,
+    margin:10,
+
+
+},
+iconoUbi:{
+    color: Colors.blueText,
+},
+iconoCorazon:{
+    color: Colors.blueText,
+    top: -9,
+    position:'absolute',
+    right: 15,
+},
+nombrePluto:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontWeight:'bold',
+    fontSize: 20,
+},
+cajaNaranjaPerro:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius:30,
+    width: 110,
+    height: 55,
+    alignItems:'center',
+    margin: 3,
+},
+datosPerro:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontSize: 18,
+},
+perfilAna:{
+    flexDirection:'row',
+},
+cajaAzulperros:
+{
+    backgroundColor: Colors.blueLight,
+    borderRadius:30,
+    margin: 5,
+},
+nombreAna:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontSize: 16,
+    padding:5
+},
+iconoPerros:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius: 60,
+    padding: 5,
+    height: 45,
+
+},
+
+
 })

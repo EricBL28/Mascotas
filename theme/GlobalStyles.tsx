@@ -2,34 +2,48 @@ import { StyleSheet } from "react-native"
 
 export const Colores = {
     azul: "#366288",
-    blanco:"#ffff",
-    naranja:"#FD7712",
+    blanco: "#ffff",
+    naranja: "#FD7712",
 
 }
 
 export const GlobalStyles = StyleSheet.create({
-    containerAzul:{
-        backgroundColor:Colores.azul,
-        height:"100%"
+    header: {
+        marginTop: 60,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        marginBottom: 75,
+
+    },
+    Titulo: {
+        fontSize: 35,
+        fontWeight: "bold",
+        color: "#333",
+    },
+    containerAzul: {
+        backgroundColor: Colores.azul,
+        height: "100%"
     },
     textoCorreo: {
         alignItems: "center",
-        justifyContent: "center", // Asegura el texto centrado
+        justifyContent: "center", 
         padding: 10,
-        width: 200, // Ajusta para adaptarse al texto o botón
+        width: 200, 
         backgroundColor: Colores.naranja,
         borderRadius: 32,
-        marginTop: 20, // Para espaciar el botón de los inputs
-      },
-      containerBlanco: {
+        marginTop: 20, 
+    },
+    containerBlanco: {
         flex: 1,
         alignItems: "center",
         justifyContent: "center",
         borderRadius: 32,
         backgroundColor: Colores.blanco,
         padding: 20,
-      },
-      input: {
+        marginBottom:50
+    },
+    input: {
         width: "80%",
         height: 50,
         borderColor: '#CCC', // Usa un gris suave si no tienes definido
@@ -39,19 +53,31 @@ export const GlobalStyles = StyleSheet.create({
         marginBottom: 20,
         fontSize: 16,
         backgroundColor: '#FFF', // Fondo blanco para el campo
-      },
-      buttonText: {
+    },
+    GatitoPerrito:{
+        width: 250,
+        height: 250,
+        resizeMode: "contain",
+        marginTop: -300, 
+        
+    },
+    buttonText: {
         color: Colores.blanco,
         fontSize: 18,
         fontWeight: "bold",
-      },
-    logo: {
-        width: 60,
-        height:60,
-        left:"80%",
     },
-    textoTitulo:{
-        fontSize:35
+    textoInicioSesion:{
+        fontSize: 35,
+    },
+    logo: {
+        width: 70,
+        height: 70,
+        resizeMode: "contain",
+        marginLeft: 45,
+    },
+    textoTitulo: {
+        fontSize: 30,
+        color:Colores.azul
 
     },
     containerCentrado: {
@@ -73,9 +99,9 @@ export const GlobalStyles = StyleSheet.create({
 
     },
     drawerUserImg: {
-        width: 100, 
-        height: 100, 
-        alignSelf:'center', 
+        width: 100,
+        height: 100,
+        alignSelf: 'center',
         borderRadius: 50
     }
 })

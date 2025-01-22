@@ -19,7 +19,9 @@ export default function Index() {
 
   return (<View style={GlobalStyles.containerAzul}>
 
-    <View>
+    <View style={GlobalStyles.header}>
+      <Text style={GlobalStyles.Titulo}>PetConnect</Text>
+
       <Image source={require("../assets/images/logo02.png")} style={GlobalStyles.logo}>
       </Image>
       
@@ -27,8 +29,10 @@ export default function Index() {
 
 
     <View style={GlobalStyles.containerBlanco}>
+      <Image source={require("../assets/images/gatito.png")} style={GlobalStyles.GatitoPerrito}>
+      </Image>
 
-      <Text> INICIA SESION </Text>
+      <Text style={GlobalStyles.textoInicioSesion}> INICIA SESION </Text>
     <TextInput style={GlobalStyles.textoCorreo} // Asegúrate de agregar estilos para este input en tu GlobalStyles
         placeholder="Correo electrónico"
         keyboardType="email-address"

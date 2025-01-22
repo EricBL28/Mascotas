@@ -27,13 +27,12 @@ export default function Index() {
       
     </View>
 
-
     <View style={GlobalStyles.containerBlanco}>
       <Image source={require("../assets/images/gatito.png")} style={GlobalStyles.GatitoPerrito}>
       </Image>
 
       <Text style={GlobalStyles.textoInicioSesion}> INICIA SESION </Text>
-    <TextInput style={GlobalStyles.textoCorreo} // Asegúrate de agregar estilos para este input en tu GlobalStyles
+    <TextInput style={GlobalStyles.textoCorreo} //
         placeholder="Correo electrónico"
         keyboardType="email-address"
         value={email}
@@ -42,7 +41,7 @@ export default function Index() {
       />
       
       <TextInput
-        style={GlobalStyles.textoCorreo} // Mismo estilo para el segundo input
+        style={GlobalStyles.textoCorreo} 
         placeholder="Contraseña"
         secureTextEntry
         value={password}
@@ -52,6 +51,7 @@ export default function Index() {
       <TouchableOpacity style={GlobalStyles.textoCorreo} onPress={handleLogin}>
         <Text style={GlobalStyles.buttonText}>Acceder</Text>
       </TouchableOpacity>
+
     </View>
   </View>);
 }

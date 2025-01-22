@@ -4,6 +4,7 @@ export const Colores = {
     azul: "#366288",
     blanco: "#ffff",
     naranja: "#FD7712",
+    gris:'#CCC',
 
 }
 
@@ -41,18 +42,19 @@ export const GlobalStyles = StyleSheet.create({
         borderRadius: 32,
         backgroundColor: Colores.blanco,
         padding: 20,
-        marginBottom:50
+        marginBottom:50,
+        position:"fixed",
     },
     input: {
         width: "80%",
         height: 50,
-        borderColor: '#CCC', // Usa un gris suave si no tienes definido
+        borderColor: Colores.gris, 
         borderWidth: 1,
         borderRadius: 16,
         paddingHorizontal: 10,
         marginBottom: 20,
         fontSize: 16,
-        backgroundColor: '#FFF', // Fondo blanco para el campo
+        backgroundColor: Colores.blanco, 
     },
     GatitoPerrito:{
         width: 250,

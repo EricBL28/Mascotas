@@ -282,6 +282,7 @@ inputRescate:{
     marginBottom: 0,
     marginLeft: 15,
     color: Colors.blueText,
+    fontFamily: 'Poppins',
 },
 input2Rescate:{
     backgroundColor: Colors.white,
@@ -290,7 +291,42 @@ input2Rescate:{
     color: Colors.blueText,
     width:'85%',
     height:  80,
+    fontFamily: 'Poppins',
 
+},
+//refugio de patitas...............................
+primerTexto:{
+    padding: 10,
+    borderRadius:30,
+    fontFamily: 'Poppins',
+},
+titulo2Refu:{
+    color: Colors.blueDark,
+    fontWeight:'bold',
+    fontSize: 19,
+    fontFamily: 'Poppins',
+},
+inputRefugio:{
+    backgroundColor: Colors.white,
+    color: Colors.blueDark,
+    padding: 10,
+    borderRadius:30,
+    width: '90%',
+    fontFamily: 'Poppins',
+},
+contenedorAnimales:{
+    backgroundColor: Colors.orangeContainer,
+    borderRadius:30,
+    width: 170,
+    alignItems:'center',
+    marginBottom: 10,
+},
+nombrePerro:{
+    fontFamily: 'Poppins',
+    color: Colors.blueText,
+    fontWeight:'bold',
+    alignSelf:'flex-start',
+    paddingLeft: 20,
 },
 
 })

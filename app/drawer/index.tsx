@@ -4,7 +4,7 @@ import React from 'react'
 const ScreenPrincipal = () => {
   return (
     <View>
-      <Text >drawer</Text>
+      <Text>drawer</Text>
     </View>
   )
 }

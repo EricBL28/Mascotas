@@ -2,14 +2,20 @@ import { GlobalStyles } from "@/theme/GlobalStyles"
 import { View, Text, Image, Pressable} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
+import { useNavigation } from "@react-navigation/native";
+
 
 
 
 const menu = () => {
+    const navigation = useNavigation();
     return (
         <View style={GlobalStyles.contenedor}>
-            <View style={{flexDirection: 'row', columnGap:24, alignItems:'center'}}>                
-                <Ionicons name="menu-outline" size={65} color="white" style={{position:'relative', top: 10}}/>
+            <View style={{flexDirection: 'row', columnGap:24, alignItems:'center'}}>      
+            <Pressable onPress={() => navigation.openDrawer()}>
+            <Ionicons name="menu-outline" size={65} color="white" style={{position:'relative', top: 10}}/>
+            </Pressable>          
+                
                 <Text style={{color:'white', fontSize:40, fontFamily: 'WendyOne', marginTop:30,}}>Petconnect</Text>
                 <Ionicons name="notifications-outline" size={50} color="white" style={{position:'relative', top: 10, right:5}}/>
             </View>

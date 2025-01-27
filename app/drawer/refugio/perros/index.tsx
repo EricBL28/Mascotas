@@ -2,7 +2,7 @@ import { GlobalStyles } from "@/theme/GlobalStyles"
 import { View, Text, Image, Pressable, TextInput} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
-import Boton from '../../components/Boton';
+import Boton from '../../../components/Boton';
 
 
 

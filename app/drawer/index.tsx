@@ -3,6 +3,7 @@ import { View, Text, Image, Pressable} from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { router } from "expo-router";
 import { useNavigation } from "@react-navigation/native";
+import { Alert } from "react-native";
 
 
 //este es el MENUUUUUUUU------------------------------------------------------------------
@@ -60,7 +61,7 @@ const menu = () => {
                             <Text style={GlobalStyles.seccionesMenu}>Comunidad animal</Text>
                         </Pressable>
                             
-                        <Pressable onPress={()=>{router.push('../login')}}>
+                        <Pressable onPress= {()=>{Alert.alert('En Desarrollo!')}} style={ { marginTop: -25, marginRight: 40 }}>
                             <Text style={GlobalStyles.seccionesMenu}>Sobre Petconnect</Text>
                         </Pressable>
                     </View>

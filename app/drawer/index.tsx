@@ -49,7 +49,8 @@ const menu = () => {
                             <Text style={GlobalStyles.seccionesMenu}>Patitas al rescate</Text>
                         </Pressable>
 
-                        <Pressable onPress={()=>{router.push('/drawer/comunidad')}}>
+                        <Pressable onPress= {()=>{
+                            Alert.alert('Infórmate de más pulsando sobre Comunidad Animal') }}>
                             <Text style={GlobalStyles.seccionesMenu}>Patitas en marcha</Text>
                         </Pressable>
                             
@@ -61,7 +62,7 @@ const menu = () => {
                             <Text style={GlobalStyles.seccionesMenu}>Comunidad animal</Text>
                         </Pressable>
                             
-                        <Pressable onPress= {()=>{Alert.alert('En Desarrollo!')}} style={ { marginTop: -25, marginRight: 40 }}>
+                        <Pressable onPress= {()=>{Alert.alert('Conócenos navengando en nuestra app') }}>
                             <Text style={GlobalStyles.seccionesMenu}>Sobre Petconnect</Text>
                         </Pressable>
                     </View>
@@ -69,8 +70,6 @@ const menu = () => {
                 </View>
                 
                 
-                
-        
             </View>
         
             <Text style={{fontFamily: 'Poppins', color:'white', fontSize:20, fontWeight:'bold', margin:10}}>PROTECTORAS EN COLABORACIÓN</Text>

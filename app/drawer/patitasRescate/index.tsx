@@ -1,6 +1,6 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
 import { View, Text, Image, StyleSheet, TextInput } from 'react-native';
-import Boton from "../../components/Boton";
+import Boton from "../../../components/Boton";
 import { Ionicons } from '@expo/vector-icons';
 
 

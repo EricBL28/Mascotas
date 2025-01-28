@@ -1,6 +1,6 @@
 import { View, Text, TextInput, Pressable, Image } from 'react-native';
 import { GlobalStyles } from '../../theme/GlobalStyles';
-import Boton from '../components/Boton';
+import Boton from '../../components/Boton';
 import { router } from "expo-router";
 
 

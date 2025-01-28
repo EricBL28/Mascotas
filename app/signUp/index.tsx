@@ -52,7 +52,7 @@ const signUp = () => {
 
             <View style={GlobalStyles.contenedorBotones}>
                 <Boton label='Cancelar' backgroundColor='gris' link='../login'></Boton>
-                <Boton label='Registrate' backgroundColor='gris' link='../menu'></Boton>
+                <Boton label='Registrate' backgroundColor='gris' link='../drawer'></Boton>
             </View>
 
 

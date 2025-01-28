@@ -52,7 +52,7 @@ const login = () => {
                 <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
             </Pressable>
 
-            <Boton label='Acceder' backgroundColor='naranja' link='../menu'></Boton>
+            <Boton label='Acceder' backgroundColor='naranja' link='../drawer'></Boton>
           </View>
 
 

@@ -29,7 +29,7 @@ const LayoutDrawer = () => {
     drawerLabel: 'INICIO',
     headerStyle: { backgroundColor: Colors.blueDark }, 
     title:"INICIO",
-    headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar'},
+    headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-90},
   }}
 />;
 

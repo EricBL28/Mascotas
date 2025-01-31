@@ -6,6 +6,15 @@ export const Colores = {
     naranja: "#FD7712",
     gris:'#CCC',
 
+    blueDark: "#366288",
+    blueText: "#194a6e",
+    orangeInput: "#ff9f57",
+    orangeButton: "#fea14e",
+    grey: '#899296',
+    greyDark: '#363737',
+    orangeContainer: '#fdb066',
+    blueLight: '#a6c6d7',
+
 }
 
 export const GlobalStyles = StyleSheet.create({
@@ -43,6 +52,7 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Colores.blanco,
         padding: 20,
         marginBottom:50,
+        margin:20,
         position:"fixed",
     },
     input: {
@@ -105,5 +115,40 @@ export const GlobalStyles = StyleSheet.create({
         height: 100,
         alignSelf: 'center',
         borderRadius: 50
-    }
+    },
+
+    //botones -------------------------------------------
+boton:{
+    width: 150,
+    height: 100,
+    textAlign: 'center',
+    padding: 10,
+    fontSize: 21,
+    borderRadius: 30,
+    backgroundColor: Colores.orangeInput,
+    fontFamily:'Poppins',
+    fontWeight:'bold',
+},
+botonNaranja:
+{
+    backgroundColor: Colores.orangeButton,
+    color:Colores.blueText,
+    textAlign:'center',
+    padding: 15,
+    width:'auto',
+    height: 59 ,
+},
+botonGris:
+{
+    backgroundColor: Colores.grey,
+    color: Colores.blanco,
+    borderBottomColor: Colores.blanco,
+    width:'auto',
+    borderWidth: 4,
+    height: 59 ,
+    textAlign:'center',
+    padding: 10,
+    margin:10,
+    marginBottom:30,
+},
 })

@@ -6,10 +6,11 @@ export const GlobalStyles =  StyleSheet.create({
 contenedor:{
     backgroundColor: Colors.blueDark,
     alignItems:  'center',
+    justifyContent:'center',
     flex: 1,
 },
 contenedorRegistro:{
-    backgroundColor: Colors.white,
+    backgroundColor: Colors.blueDark,
     alignItems:  'center',
     flex: 1,
     flexDirection: 'column',
@@ -33,24 +34,26 @@ drawerUserImg: {
 },
 //botones -------------------------------------------
 boton:{
-    width: 150,
+    width: 125,
     height: 100,
     textAlign: 'center',
-    padding: 10,
-    fontSize: 21,
+    padding: 0,
+    fontSize: 17,
     borderRadius: 30,
     backgroundColor: Colors.orangeInput,
-    fontFamily:'Poppins',
+    opacity:0.7,
+    fontFamily:'MoreSugar-Thin',
     fontWeight:'bold',
 },
 botonNaranja:
 {
+    marginTop:-15,
     backgroundColor: Colors.orangeButton,
     color:Colors.blueText,
     textAlign:'center',
     padding: 15,
     width:'auto',
-    height: 59 ,
+    height: 59,
 },
 botonGris:
 {
@@ -66,73 +69,107 @@ botonGris:
     marginBottom:30,
 },
 //PANTALLA DE LOGIN------------------------------------
-fondoBlancoLog:{
-    backgroundColor: Colors.white,
-    borderRadius: 30,
-    flex: 1,
-    width: '100%',
-    top:50,
-    marginBottom:59,
+logoLogin: {
+    width: 100,
+    height: 100,
+    left:-20,
+    resizeMode: "contain",
+    marginLeft: 45,
 },
-tituloLogin:{
+header: {
+    marginTop: 40,
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+    marginBottom: 80,
+},
+Titulo: {
+    fontSize: 35,
+    right:-25,
+    fontWeight: "bold",
+    fontFamily:"MoreSugar",
+    color: Colors.white,
+},
+containerblueLight: {
+    backgroundColor: Colors.blueLight,
+    height: "100%",
+},
+fondoBlancoLog: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 32,
+    backgroundColor: Colors.white,
+    padding: 20,
+    width:"100%",
+    marginBottom: 50,
+    position: "relative",
+},
+tituloLogin: {
     fontSize: 29,
     marginTop: 100,
-    marginBottom:3,
+    marginBottom: 3,
     textAlign: "center",
-    fontFamily:'Poppins',
+    fontFamily: 'MoreSugar',
     color: Colors.white,
 },
-PetConnect:{
+PetConnect: {
     textAlign: "center",
     fontSize: 49,
-    fontFamily:'WendyOne',
+    fontFamily: 'WendyOne',
     color: Colors.white,
 },
-perroGato:{
-    width: 250, 
-    height:210, 
-    position:'relative', 
-    left:69, 
-    top:-47, 
-}
-,
-textoAccede:{
+perroGato: {
+    width: 240,
+    height: 240,
+    marginBottom:30,
+    resizeMode: "contain",
+    marginTop: -80, 
+},
+textoAccede: {
     fontSize: 40,
     fontWeight: 'bold',
     textAlign: "center",
-    fontFamily:'Poppins',
-    color: Colors.blueText,
+    fontFamily: 'MoreSugar',
+    marginTop:20,
+    marginBottom:20,
+    color: Colors.blueText, 
 },
 input: {
     borderRadius: 30,
     padding: 15,
     fontSize: 20,
+    width:350,
     margin: 10,
+    opacity:0.7,
     marginBottom: 10,
-    backgroundColor: Colors.orangeInput,
+    backgroundColor: Colors.orangeInput, 
 },
-olvidarContra:{
-    fontSize: 20,
-    color: Colors.white,
-    marginBottom: 20,
-    marginTop:10,
-    fontFamily:'Poppins',
-    textDecorationLine:"underline",
+olvidarContra: {
+    fontSize: 15,
+    color: Colors.grey,
+    marginBottom: 0,
+    marginTop: 10,
+    right:-90,
+    fontFamily: 'MoreSugar',
+    textDecorationLine: "underline",
 },
-textRegistrar:{
+textRegistrar: {
     fontSize: 20,
     color: Colors.blueText,
     textAlign: "left", 
     marginLeft: 10,  
-    textDecorationLine:"underline"
-
+    textDecorationLine: "underline",
 },
+
 //patas-------------------------------------------------------
 pataArriba:{
-    width: 40,
+    width: 50,
     height:40,
     alignSelf:'flex-start',
-    transform:[{rotate: '-45deg'}],
+    right:-60,
+    transform:[{rotate: '-15deg'},{translateY:6}],
+    zIndex: 10,
 },
 pataAbajo:{
     width: 40,
@@ -149,11 +186,22 @@ contenedorGrisOscuro:{
     position:'absolute',
     bottom:50,
 }, 
+fondoBlancoReg: {
+    flex: 1,
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 32,
+    backgroundColor: Colors.white,
+    padding: 20,
+    width:"100%",
+    marginBottom: 0,
+    position: "relative",
+},
 tituloRegistro:{
     fontSize: 30,
     top: 60,
     textAlign: "center",
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
     color: Colors.blueDark,
 
 },
@@ -171,15 +219,15 @@ textoUnirse:{
     fontSize: 29,
     fontWeight: 'bold',
     textAlign: "center",
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
 
 },
 perroGatoReg:{
-    width: 250, 
+    width: 259, 
     height:210, 
     position:'absolute', 
     alignSelf:'center',    
-    top: 150,
+    top: 120,
 },
 contenedorBotones:{
     flexDirection:'row',
@@ -190,20 +238,20 @@ textoAccedeARefugio:{
     color:Colors.blueText, 
     bottom: 5, 
     fontSize: 20, 
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
     position: 'absolute'
 },
 //menu----------------------------------------
 textoSeccion:{
     color: Colors.blueText,
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
     fontSize: 30,
     textAlign:'left',
     margin: 20,
 },
 seccionesMenu:{
     color: Colors.blueText,
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
     textDecorationLine:'underline',
     fontSize: 25,
     //he puesto el margen para que parezca centrado pero no se como centrarlo con las imagenes
@@ -217,7 +265,7 @@ imagenesMenu:{
 //comunidad animal-----------------------------------------------
 titulocomunidad:{
     fontSize: 27, 
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
     color: Colors.white,
     fontWeight:'bold', 
     margin: 20,
@@ -237,7 +285,7 @@ cajaBlanca:{
     flexDirection:'column',
 },
 titulos:{
-    fontFamily:'Poppins',
+    fontFamily:'MoreSugar',
     fontSize:22,
     fontWeight:'bold', 
     color: Colors.blueText,
@@ -246,7 +294,7 @@ titulos:{
 },
 parrafoPatitas:{
     fontSize: 17,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     textAlign:'justify',
     padding: 10,
     color: Colors.blueText,
@@ -257,7 +305,7 @@ textosTemas:{
     borderRadius:30,
     margin: 10, 
     fontSize: 18,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     fontWeight:'bold', 
     textAlign:'justify',
     color: Colors.blueText,
@@ -268,7 +316,7 @@ iconos:{
     //no he podido poner los iconos a la izquierda
 },
 //patitas al rescate-----------------------------------------------
-cajaAzul:{
+cajablueLight:{
     backgroundColor: Colors.blueLight,
     borderRadius:30,
     marginLeft: 15,
@@ -277,7 +325,7 @@ cajaAzul:{
 },
 textoInicioUbi:{
     color: Colors.blueText,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     fontSize: 16,
     padding:15,
     fontWeight: 'bold',
@@ -288,7 +336,7 @@ textoinfoUbi:{
     padding:14, 
     borderRadius: 30,
     color: Colors.blueText,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     fontSize: 16,
     margin:15,
 },
@@ -299,7 +347,7 @@ inputRescate:{
     marginBottom: 0,
     marginLeft: 15,
     color: Colors.blueText,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
 },
 input2Rescate:{
     backgroundColor: Colors.white,
@@ -308,20 +356,20 @@ input2Rescate:{
     color: Colors.blueText,
     width:'85%',
     height:  80,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
 
 },
 //refugio de patitas...............................
 primerTexto:{
     padding: 10,
     borderRadius:30,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
 },
 titulo2Refu:{
     color: Colors.blueDark,
     fontWeight:'bold',
     fontSize: 19,
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
 },
 inputRefugio:{
     backgroundColor: Colors.white,
@@ -329,7 +377,7 @@ inputRefugio:{
     padding: 10,
     borderRadius:30,
     width: '90%',
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
 },
 contenedorAnimales:{
     backgroundColor: Colors.orangeContainer,
@@ -339,7 +387,7 @@ contenedorAnimales:{
     marginBottom: 10,
 },
 nombrePerro:{
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     color: Colors.blueText,
     fontWeight:'bold',
     alignSelf:'flex-start',
@@ -365,7 +413,7 @@ iconoCorazon:{
     right: 15,
 },
 nombrePluto:{
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     color: Colors.blueText,
     fontWeight:'bold',
     fontSize: 20,
@@ -379,21 +427,21 @@ cajaNaranjaPerro:{
     margin: 3,
 },
 datosPerro:{
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     color: Colors.blueText,
     fontSize: 18,
 },
 perfilAna:{
     flexDirection:'row',
 },
-cajaAzulperros:
+cajablueLightperros:
 {
     backgroundColor: Colors.blueLight,
     borderRadius:30,
     margin: 5,
 },
 nombreAna:{
-    fontFamily: 'Poppins',
+    fontFamily: 'MoreSugar',
     color: Colors.blueText,
     fontSize: 16,
     padding:5

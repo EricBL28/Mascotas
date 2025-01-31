@@ -7,62 +7,60 @@ import { router } from "expo-router";
 
 const login = () => {
   return (
-    <View style = {GlobalStyles.contenedor}>
-      <View style={{height:100, width:'100%' , position:'absolute', top:13}}>
-        <Image 
-          source={require("../../assets/images/logo_2.png")}
-          style={{width: 60, height:60, position:'relative', left:'77%'}}
-        ></Image>
+    <View style={GlobalStyles.contenedor}>
+      <View style={GlobalStyles.header}>
+        <Text style={GlobalStyles.Titulo}>PetConnect</Text>
+        <Image source={require("../../assets/images/logo_1.png")} style={GlobalStyles.logoLogin} />
       </View>
 
-      <Text style={GlobalStyles.tituloLogin}>Bienvenido a </Text>
-      <Text style={GlobalStyles.PetConnect}>PetConnect</Text>
-
       <View style={GlobalStyles.fondoBlancoLog}>
-        
-        <Image 
+
+        <Image
           source={require("../../assets/images/perroGatoJuntos.png")}
           style={GlobalStyles.perroGato}
         ></Image>
 
-        <View style={{ flexDirection: 'column', flexWrap: 'wrap', bottom:50}}>
+        <View style={{ flexDirection: 'column', alignItems: 'center', bottom: 50 }}>
 
-          <Image 
-            source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataArriba}
-          ></Image>
-          <Text style= {GlobalStyles.textoAccede}>Accede al refugio</Text>
-          <Image 
-            source={require("../../assets/images/huellaNaranja.png")}
-            style={GlobalStyles.pataAbajo}
-          ></Image>
-            
+          <Text style={GlobalStyles.textoAccede}>Inicia Sesion</Text>
+
           <TextInput
             style={GlobalStyles.input}
-            placeholder="Email"
+            placeholder="Correo electronico"
           />
 
           <TextInput
             style={GlobalStyles.input}
             placeholder="Contraseña"
           />
-          <View style={{flexDirection: 'row',flexWrap: 'wrap', width: '100%',  columnGap: 108, alignContent:'center'}}>
-            
-            <Pressable onPress={()=>{router.push('../signUp')}}>
-                <Text style={GlobalStyles.textRegistrar}>Regístrate aquí</Text>
-            </Pressable>
+          <Text style={GlobalStyles.olvidarContra}>Recuperar_contraseña</Text>
 
-            <Boton label='Acceder' backgroundColor='naranja' link='../drawer'></Boton>
-          </View>
+          
+          <Image
+            source={require("../../assets/images/huellaNaranja.png")}
+            style={GlobalStyles.pataArriba}
+          ></Image>
+          <Boton label='Acceder' width={200} backgroundColor='naranja' link='../drawer'></Boton>
+          <Image
+            source={require("../../assets/images/huellaNaranja.png")}
+            style={GlobalStyles.pataArriba}
+          ></Image>
+          <Boton label='Registrarse' width={200} backgroundColor='naranja' link='../signUp'></Boton>
+          
+          
+
+          
+
+
 
 
         </View>
-        
-        
-  
+
+
+
       </View>
 
-      <Text style ={GlobalStyles.olvidarContra}>¿Olvidaste la contraseña?</Text>
+
     </View>
 
   )

@@ -27,6 +27,9 @@ drawerUserContainer: {
 
 },
 headerDrawer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
     backgroundColor:Colors.blueDark,
 },
 drawerUserImg: {
@@ -45,7 +48,7 @@ boton:{
     borderRadius: 30,
     backgroundColor: Colors.orangeInput,
     opacity:0.7,
-    fontFamily:'MoreSugar',
+    fontFamily: 'MoreSugar',
     fontWeight:'bold',
 },
 botonNaranja:
@@ -90,7 +93,7 @@ Titulo: {
     fontSize: 35,
     right:-25,
     fontWeight: "bold",
-    fontFamily:"MoreSugar",
+    fontFamily: 'MoreSugar',
     color: Colors.white,
 },
 containerblueLight: {

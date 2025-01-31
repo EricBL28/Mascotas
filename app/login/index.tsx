@@ -47,10 +47,6 @@ const login = () => {
           ></Image>
           <Boton label='Registrarse' width={200} backgroundColor='naranja' link='../signUp'></Boton>
           
-          
-
-          
-
 
 
 

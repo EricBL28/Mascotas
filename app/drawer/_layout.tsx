@@ -18,23 +18,29 @@ const LayoutDrawer = () => {
       borderRadius: 10, // Bordes redondeados en los ítems
       marginVertical: 5, // Espaciado entre ítems
     }
+    
+
   }}
 >
              
+<Drawer.Screen
+  name="index"
+  options={{
+    drawerLabel: 'INICIO',
+    headerStyle: { backgroundColor: Colors.blueDark }, 
+    title:"INICIO",
+    headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar'},
+  }}
+/>;
+
       <Drawer.Screen
-        name="index" 
-        options={{
-          drawerLabel: 'INICIO',
-          title: 'Pantalla inicio',
-          
-        }}
-      />
-      <Drawer.Screen
-        name="productos/index" 
+        name="refugio/perros/index" 
         options={{
           drawerLabel: 'PERROS',
-          title: 'Listado de perros',
-          
+          title: 'Perros',
+          headerStyle: { backgroundColor: Colors.blueDark }, 
+          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar', right:-80},
+         
         }}
       />
       
@@ -43,32 +49,45 @@ const LayoutDrawer = () => {
         options={{
           drawerLabel: 'COMUNIDAD',
           title: 'Comunidad',
+          headerStyle: { backgroundColor: Colors.blueDark }, 
+          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar', right:-60},
         }}
       />
-      <Drawer.Screen
-        name="configuracion/configuracion" 
-        options={{
-          drawerLabel: 'CONFIGURACION',
-          title: 'Pantalla configuración',
-        }}
-      />
+      
 
       <Drawer.Screen
         name="refugio/index" 
         options={{
           drawerLabel: 'REFUGIO',
           title: 'Refugio',
+          headerStyle: { backgroundColor: Colors.blueDark }, 
+          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-90},
         }}
       />
 
       <Drawer.Screen
         name="patitasRescate/index" 
         options={{
-          drawerLabel: 'PATITASRESCATES',
+          drawerLabel: 'PATITAS AL RESCATES',
           title: 'Patitas Rescates',
+          headerStyle: { backgroundColor: Colors.blueDark }, 
+          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-10},
         }}
       />
 
+      
+
+      <Drawer.Screen
+        name="login/index" 
+        options={{
+          drawerLabel: '',
+          
+        }}
+        
+      />
+      
+      
+      
       
     </Drawer>
 

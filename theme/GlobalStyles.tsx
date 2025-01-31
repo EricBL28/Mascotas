@@ -177,7 +177,7 @@ pataAbajo:{
     alignSelf:'flex-end',
     marginRight: 14,
     transform:[{rotate: '45deg'}],
-},
+},  
 //PANTALLA DE Registro------------------------------------
 contenedorGrisOscuro:{
     backgroundColor:Colors.greyDark,
@@ -243,9 +243,14 @@ textoAccedeARefugio:{
 },
 //menu----------------------------------------
 textoSeccion:{
-    color: Colors.blueText,
+    color: Colors.white,
+    padding:10,
+    backgroundColor:Colors.blueDark,
+    borderRadius:50,
     fontFamily:'MoreSugar',
-    fontSize: 30,
+    fontSize: 14,
+    width:150,
+    left:-125,
     textAlign:'left',
     margin: 20,
 },
@@ -254,13 +259,13 @@ seccionesMenu:{
     fontFamily:'MoreSugar',
     textDecorationLine:'underline',
     fontSize: 25,
-    //he puesto el margen para que parezca centrado pero no se como centrarlo con las imagenes
     marginBottom: 46,
 },
 imagenesMenu:{
-    width:60,
-    height:60,
+    width:100,
+    height:100,
     margin:10,
+    borderRadius:5,
 },
 //comunidad animal-----------------------------------------------
 titulocomunidad:{

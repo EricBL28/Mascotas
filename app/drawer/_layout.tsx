@@ -2,13 +2,14 @@ import { Drawer } from 'expo-router/drawer';
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import CustomDrawer from '@/components/CustomDrawer';
+import { Colors } from "../../theme/Colors";
 
 const LayoutDrawer = () => {
   return (
     <Drawer 
   drawerContent={CustomDrawer}
   screenOptions={{
-    drawerStyle: { backgroundColor: '#D29420' }, // Fondo naranja sólido
+    drawerStyle: { backgroundColor: Colors.blueDark }, // Fondo naranja sólido
     drawerInactiveTintColor: '#000000', // Texto negro en ítems inactivos
     drawerActiveBackgroundColor: '#B3781D', // Fondo naranja oscuro en ítems activos
     drawerActiveTintColor: '#FFFFFF', // Texto blanco en ítems activos
@@ -36,15 +37,42 @@ const LayoutDrawer = () => {
           
         }}
       />
+      
       <Drawer.Screen
-        name="configuracion/index" 
+        name="comunidad/index" 
         options={{
-          drawerLabel: 'Configuración',
-          title: 'Pantalla configuración',
-          drawerIcon: ({ size, color }) => <Ionicons name="construct" size={size} color={color} />,
+          drawerLabel: 'COMUNIDAD',
+          title: 'Comunidad',
         }}
       />
+      <Drawer.Screen
+        name="configuracion/configuracion" 
+        options={{
+          drawerLabel: 'CONFIGURACION',
+          title: 'Pantalla configuración',
+        }}
+      />
+
+      <Drawer.Screen
+        name="refugio/index" 
+        options={{
+          drawerLabel: 'REFUGIO',
+          title: 'Refugio',
+        }}
+      />
+
+      <Drawer.Screen
+        name="patitasRescate/index" 
+        options={{
+          drawerLabel: 'PATITASRESCATES',
+          title: 'Patitas Rescates',
+        }}
+      />
+
+      
     </Drawer>
+
+    
   );
 }
 

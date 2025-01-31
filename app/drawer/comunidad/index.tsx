@@ -6,6 +6,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 
 const comunidad = () => {
+    
     return (
         <View style={GlobalStyles.contenedor}>
             

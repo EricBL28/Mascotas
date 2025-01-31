@@ -6,7 +6,7 @@ import { useFonts } from 'expo-font';
 
 export default function RootLayout() {
   const [loaded] = useFonts({
-    Poppins: require("../assets/fonts/Poppins-Regular.ttf"),
+    MoreSugar: require("../assets/fonts/MoreSugar-Thin.ttf"),
     WendyOne: require("../assets/fonts/WendyOne-Regular.ttf"),
   });
   return (

@@ -45,7 +45,7 @@ boton:{
     borderRadius: 30,
     backgroundColor: Colors.orangeInput,
     opacity:0.7,
-    fontFamily:'MoreSugar-Thin',
+    fontFamily:'MoreSugar',
     fontWeight:'bold',
 },
 botonNaranja:
@@ -119,7 +119,7 @@ tituloLogin: {
 PetConnect: {
     textAlign: "center",
     fontSize: 49,
-    fontFamily: 'WendyOne',
+    fontFamily: 'MoreSugar',
     color: Colors.white,
 },
 perroGato: {
@@ -211,7 +211,7 @@ tituloRegistro:{
 PetConnectRegistro:{
     textAlign: "center",
     fontSize: 50,
-    fontFamily:'WendyOne',
+    fontFamily:'MoreSugar',
     color: Colors.blueDark,
     marginBottom: 20,
     top:50,
@@ -321,8 +321,8 @@ textosTemas:{
 iconos:{
     color: Colors.blueText,
     fontSize: 25,
-    //no he podido poner los iconos a la izquierda
 },
+
 //patitas al rescate-----------------------------------------------
 cajablueLight:{
     backgroundColor: Colors.blueLight,
@@ -404,7 +404,6 @@ nombrePerro:{
 
 //perros----------------------------------
 nombreUbica:{
-    //contenedor del nombre y la ubicacion
     flexDirection: 'row',
     columnGap: 230,
     margin:10,

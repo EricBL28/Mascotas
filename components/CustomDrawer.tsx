@@ -6,8 +6,7 @@ import { GlobalStyles } from '@/theme/GlobalStyles'
 const CustomDrawer = (props: DrawerContentComponentProps) => {
   return (
     <DrawerContentScrollView {...props}>
-      {/* Encabezado con el logo y título */}
-      <View style={GlobalStyles.header}>
+      <View style={GlobalStyles.headerDrawer}>
         <Text style={GlobalStyles.Titulo}>PetConnect</Text>
         <Image 
           source={require("@/assets/images/logo_1.png")} 
@@ -16,7 +15,6 @@ const CustomDrawer = (props: DrawerContentComponentProps) => {
         />
       </View>
 
-      {/* Ítems del Drawer */}
       <DrawerItemList {...props} />
     </DrawerContentScrollView>
   )

@@ -26,6 +26,9 @@ drawerUserContainer: {
     borderRadius: 10,
 
 },
+headerDrawer: {
+    backgroundColor:Colors.blueDark,
+},
 drawerUserImg: {
     width: 100, 
     height: 100, 

@@ -6,7 +6,7 @@ import { GlobalStyles } from '@/theme/GlobalStyles'
 const CustomDrawer = ( props: DrawerContentComponentProps) => {
   return (
     <DrawerContentScrollView {...props}>
-      <View style={GlobalStyles.drawerUserContainer}>
+      <View  style={GlobalStyles.drawerUserContainer}>
         <Image style={GlobalStyles.drawerUserImg}
                 source={require('../assets/user.jpg')}
         />

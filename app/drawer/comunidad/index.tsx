@@ -11,7 +11,6 @@ const comunidad = () => {
         <View style={GlobalStyles.contenedor}>
             
             <View style={{flexDirection: 'row', alignItems:'center'}}>
-
                 <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
                 <Text style={GlobalStyles.titulocomunidad}>COMUNIDAD ANIMAL</Text>
                 <Image 

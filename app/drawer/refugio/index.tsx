@@ -8,24 +8,13 @@ import { router } from "expo-router";
 const refugio = () => {
     return (
         <View style={GlobalStyles.contenedor}>
-            <View style={{flexDirection: 'row', alignItems:'center'}}>
-                <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
-                <Text style={GlobalStyles.titulocomunidad}>REFUGIO DE PATITAS</Text>
-                <Image 
-                    source={require("../../../assets/images/logo_2.png")}
-                    style={{width: 50, height:50, position:'relative', right:15}}
-                ></Image>
-            </View>
-            <View style={GlobalStyles.cajaNaranja}>
-                <Text style={[GlobalStyles.primerTexto , {fontWeight:'bold'} ]}>Adoptar es un compromiso paratoda la vida, piénsalo bien antes dedar el paso.</Text>
-                <Text style={GlobalStyles.primerTexto}> Si no puedes cuidarlo hoy, mañana y siempre; no adoptes.</Text>
-                
-                <Image 
-                    source={require("../../../assets/images/perritosYgatitos.png")}
-                    style={{width: 320, height:65, alignSelf:'center'}}
-                ></Image>
-            </View>
-            <View style={{backgroundColor:'white', padding: 10, borderRadius:30, width:'90%', marginBottom:15,}}>
+            <TextInput
+                    style={GlobalStyles.inputRefugio}
+                    placeholder="Búsqueda"
+            />
+            
+            
+            <View style={{ padding: 10, borderRadius:16, width:'90%', marginBottom:40,marginHorizontal:10}}>
                 <Text style={GlobalStyles.titulo2Refu}>CATEGORÍAS</Text>
                 <Text style={[GlobalStyles.titulo2Refu, {position:'relative', left:250}]}>Ver todo</Text>
                 <View style={{flexDirection:"row", columnGap: 20}}>
@@ -44,11 +33,8 @@ const refugio = () => {
                 </View>
                 
             </View>
-            <TextInput
-                    style={GlobalStyles.inputRefugio}
-                    placeholder="Búsqueda por nombre..."
-            />
-            <View style={{backgroundColor: 'white', width:'90%', borderRadius:30, 
+            
+            <View style={{ width:'90%', borderRadius:30, 
                 flexDirection: "row", flexWrap: 'wrap', columnGap:10}}>
                 <Pressable onPress={()=>{router.push('../refugio/perros')}}>
                     <View style={GlobalStyles.contenedorAnimales}>
@@ -61,14 +47,7 @@ const refugio = () => {
                     </View>
                 </Pressable>
                 
-                <View style={GlobalStyles.contenedorAnimales}>
-                    <Image 
-                        source={require("../../../assets/images/AfroShaggy.png")}
-                        style={{width: 155, height: 130, borderRadius:30, marginTop:5}}
-                    ></Image>
-                    <Text style={GlobalStyles.nombrePerro}>Afro y Shaggy</Text>
-                    <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Machos (3 meses)</Text>
-                </View>
+                
 
                 <View style={GlobalStyles.contenedorAnimales}>
                     <Image 
@@ -86,6 +65,14 @@ const refugio = () => {
                     ></Image>
                     <Text style={GlobalStyles.nombrePerro}>Eros</Text>
                     <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Macho (1 año)</Text>
+                </View>
+                <View style={GlobalStyles.contenedorAnimales}>
+                    <Image 
+                        source={require("../../../assets/images/AfroShaggy.png")}
+                        style={{width: 155, height: 130, borderRadius:30, marginTop:5}}
+                    ></Image>
+                    <Text style={GlobalStyles.nombrePerro}>Afro y Shaggy</Text>
+                    <Text style={[GlobalStyles.nombrePerro, {fontWeight:'normal'}]}>Machos (3 meses)</Text>
                 </View>
 
                 

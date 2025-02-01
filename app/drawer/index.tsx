@@ -11,11 +11,9 @@ import { Alert } from "react-native";
 const menu = () => {
     const navigation = useNavigation();
     return (
-        <View style={GlobalStyles.contenedor}>
-            
+        <View style={GlobalStyles.contenedorMenu}>
 
-
-            <View style={{ backgroundColor: 'white', width: '100%', alignItems: "center" }}>
+            <View style={{ backgroundColor: 'white', width: '100%',height:'100%', alignItems: "center" }}>
 
                 <Text style={GlobalStyles.textoSeccion}>FUNCIONES</Text>
                 <View style={{ flexDirection: 'row', columnGap: 20, }}>
@@ -77,12 +75,6 @@ const menu = () => {
                     ></Image>
                 </View>
             </View>
-
-
-
-
-
-
 
         </View>
 

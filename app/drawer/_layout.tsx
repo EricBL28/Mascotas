@@ -59,9 +59,9 @@ const LayoutDrawer = () => {
         name="refugio/index" 
         options={{
           drawerLabel: 'REFUGIO',
-          title: 'Refugio',
+          title: 'Refugio de patitas',
           headerStyle: { backgroundColor: Colors.blueDark }, 
-          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-90},
+          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-5},
         }}
       />
 
@@ -79,6 +79,22 @@ const LayoutDrawer = () => {
 
       <Drawer.Screen
         name="login/index" 
+        options={{
+          drawerLabel: '',
+          
+        }}
+        
+      />
+      <Drawer.Screen
+        name="productos/index" 
+        options={{
+          drawerLabel: '',
+          
+        }}
+        
+      />
+      <Drawer.Screen
+        name="configuracion/configuracion" 
         options={{
           drawerLabel: '',
           

@@ -1,5 +1,5 @@
 import { GlobalStyles } from "@/theme/GlobalStyles"
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text,  } from 'react-native';
 import Boton from "../../../components/Boton";
 import { Ionicons } from '@expo/vector-icons';
 
@@ -8,17 +8,9 @@ import { Ionicons } from '@expo/vector-icons';
 const comunidad = () => {
     
     return (
-        <View style={GlobalStyles.contenedor}>
+        <View style={GlobalStyles.contenedorRefugio}>
             
-            <View style={{flexDirection: 'row', alignItems:'center'}}>
-                <Ionicons name="menu-outline" color="white" style={{position:'relative', top: 3, left: 15, fontSize:50}}/>
-                <Text style={GlobalStyles.titulocomunidad}>COMUNIDAD ANIMAL</Text>
-                <Image 
-                    source={require("../../../assets/images/logo_2.png")}
-                    style={{width: 50, height:50, position:'relative', right:15}}
-                ></Image>
-            </View>
-            
+
             <View style={GlobalStyles.cajaNaranja}>
                 <Text style={GlobalStyles.titulos}>PATITAS EN MARCHA (eventos)</Text>
                 <Text style={GlobalStyles.parrafoPatitas}>
@@ -27,8 +19,8 @@ const comunidad = () => {
                 </Text>
             </View>
 
-            <View style={GlobalStyles.cajaBlanca}>
-                <Text style={GlobalStyles.titulos}>TEMAS DE DISCUSIÓN</Text>
+            <View style={GlobalStyles.cajaComunidad}>
+                <Text style={GlobalStyles.titulo2Refu}>TEMAS DE DISCUSIÓN</Text>
 
                 <Text style={GlobalStyles.textosTemas}> 
                     Guías de alimentación B.A.R.F. para tu animal. 
@@ -48,7 +40,7 @@ const comunidad = () => {
                 </Text>
                 
 
-                <View style={{alignItems:'flex-end', marginEnd:10,}}>
+                <View style={{alignItems:'flex-end', marginEnd:10,marginTop:25}}>
                     <Boton label='Nuevo' backgroundColor="naranja" width={120} link='../comunidad'></Boton>
                 </View>
             </View>

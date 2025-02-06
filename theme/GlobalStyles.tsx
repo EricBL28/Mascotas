@@ -298,13 +298,13 @@ export const GlobalStyles = StyleSheet.create({
     cajaNaranja: {
         backgroundColor: Colors.orangeContainer,
         borderRadius: 30,
-        width: '90%',
+        width: '100%',
         marginBottom: 20,
     },
     cajaBlanca: {
         backgroundColor: Colors.white,
         borderRadius: 30,
-        width: '90%',
+        width: '100%',
         flexDirection: 'column',
     },
     titulos: {
@@ -323,11 +323,11 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.blueText,
     },
     textosTemas: {
-        backgroundColor: Colors.blueLight,
+        backgroundColor: Colors.white,
         padding: 20,
         borderRadius: 30,
         margin: 10,
-        fontSize: 18,
+        fontSize: 14,
         fontFamily: 'MoreSugar',
         fontWeight: 'bold',
         textAlign: 'justify',
@@ -370,8 +370,8 @@ export const GlobalStyles = StyleSheet.create({
         marginLeft: 15,
     },
     textoinfoUbi: {
-        backgroundColor: 'white',
-        padding: 14,
+        
+        padding: 0,
         borderRadius: 30,
         color: Colors.blueText,
         fontFamily: 'MoreSugar',
@@ -404,10 +404,13 @@ export const GlobalStyles = StyleSheet.create({
         fontFamily: 'MoreSugar',
     },
     titulo2Refu: {
-        color: Colors.blueDark,
-        fontWeight: 'bold',
-        fontSize: 19,
-        fontFamily: 'MoreSugar',
+        color: Colors.white,
+        fontSize: 15,
+        paddingHorizontal:15,
+        width:'auto',
+        borderRadius:15,
+        backgroundColor:Colors.blueDark,
+        marginBottom:15,
     },
     inputRefugio: {
         backgroundColor: Colors.white,
@@ -420,7 +423,7 @@ export const GlobalStyles = StyleSheet.create({
     contenedorAnimales: {
         backgroundColor: Colors.orangeContainer,
         borderRadius: 30,
-        width: 170,
+        width: 140,
         alignItems: 'center',
         marginBottom: 10,
     },
@@ -464,6 +467,10 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.blueText,
         right:-12,
         top:-10,
+    },
+    iconoUbiMapa:{
+        color: Colors.blueText,
+        top:15,
     },
     iconoCorazon: {
         color: Colors.blueText,
@@ -525,6 +532,18 @@ export const GlobalStyles = StyleSheet.create({
         padding: 5,
         height: 45,
         left:50,
+    },
+    contenedorRefugio:{
+        backgroundColor:Colors.blueLight,
+        alignItems: 'center',
+        justifyContent: 'center',
+        flex: 1,
+    },
+    cajaComunidad: {
+        backgroundColor: Colors.blueLight,
+        borderRadius: 30,
+        width: '100%',
+        flexDirection: 'column',
     },
 
 

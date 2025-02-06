@@ -19,12 +19,15 @@ const comunidad = () => {
                     source={require("../../../assets/images/ubicacion.png")}
                     style={{
                         width: '100%', height: 300, position: 'relative',
-                        alignSelf: 'center', margin: 15, marginBottom: 0
+                        alignSelf: 'center',  marginBottom: 0
                     }}
                 ></Image>
 
-
-                <Text style={GlobalStyles.textoinfoUbi}>La ubicación se añadirá cuando se seleccione en el mapa.</Text>
+                <View style={{ flexDirection: 'row', columnGap: 5, }}>
+                    <Ionicons name="location" size={50} style={GlobalStyles.iconoUbiMapa} />
+                    <Text style={GlobalStyles.textoinfoUbi}>La ubicación se añadirá cuando se seleccione en el mapa</Text>
+                </View>
+                
 
 
             </View>

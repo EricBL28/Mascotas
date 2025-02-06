@@ -3,11 +3,12 @@ import React from 'react'
 import { GlobalStyles } from '../../theme/GlobalStyles';
 import { Boton } from '../../components/Boton';
 import { router } from "expo-router";
+import { ScrollView } from 'react-native-gesture-handler';
 
 
 const login = () => {
   return (
-    <View style={GlobalStyles.contenedor}>
+    <ScrollView contentContainerStyle={GlobalStyles.contenedor}>
       <View style={GlobalStyles.header}>
         <Text style={GlobalStyles.Titulo}>PetConnect</Text>
         <Image source={require("../../assets/images/logo_1.png")} style={GlobalStyles.logoLogin} />
@@ -40,12 +41,12 @@ const login = () => {
             source={require("../../assets/images/huellaNaranja.png")}
             style={GlobalStyles.pataArriba}
           ></Image>
-          <Boton label='Acceder' width={200} backgroundColor='naranja' link='../drawer'></Boton>
+          <Boton label='Acceder' width={150} backgroundColor='naranja' link='../drawer'></Boton>
           <Image
             source={require("../../assets/images/huellaNaranja.png")}
             style={GlobalStyles.pataArriba}
           ></Image>
-          <Boton label='Registrarse' width={200} backgroundColor='naranja' link='../signUp'></Boton>
+          <Boton label='Registrarse' width={150} backgroundColor='naranja' link='../signUp'></Boton>
           
 
 
@@ -57,7 +58,7 @@ const login = () => {
       </View>
 
 
-    </View>
+    </ScrollView>
 
   )
 }

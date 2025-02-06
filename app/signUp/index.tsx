@@ -12,7 +12,6 @@ const signUp = () => {
                 <Image source={require("../../assets/images/logo_1.png")} style={GlobalStyles.logoLogin} />
             </View>
 
-            <Text style={GlobalStyles.tituloRegistro}>Registate en</Text>
 
             <Image
                 source={require("../../assets/images/perroGatoJuntos.png")}
@@ -44,14 +43,14 @@ const signUp = () => {
 
                     <Image
                         source={require("../../assets/images/huellaNaranja.png")}
-                        style={GlobalStyles.pataArriba}
+                        style={GlobalStyles.pataArribaReg}
                     ></Image>
-                    <Boton label='Registrarse' width={200} backgroundColor='naranja' link='../drawer'></Boton>
+                    <Boton label='Registrarse' width={150} backgroundColor='naranja' link='../drawer'></Boton>
                     <Image
                         source={require("../../assets/images/huellaNaranja.png")}
-                        style={GlobalStyles.pataArriba}
+                        style={GlobalStyles.pataArribaReg}
                     ></Image>
-                    <Boton label='Volver' width={200} backgroundColor='naranja' link='../login'></Boton>
+                    <Boton label='Volver' width={150} backgroundColor='naranja' link='../login'></Boton>
                 
 
 

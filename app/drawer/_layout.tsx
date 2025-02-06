@@ -29,7 +29,7 @@ const LayoutDrawer = () => {
     drawerLabel: 'INICIO',
     headerStyle: { backgroundColor: Colors.blueDark }, 
     title:"INICIO",
-    headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-90},
+    headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-70},
   }}
 />;
 
@@ -69,9 +69,9 @@ const LayoutDrawer = () => {
         name="patitasRescate/index" 
         options={{
           drawerLabel: 'PATITAS AL RESCATES',
-          title: 'Patitas Rescates',
+          title: 'Patitas al rescate',
           headerStyle: { backgroundColor: Colors.blueDark }, 
-          headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-10},
+          headerTitleStyle: { color: 'white', fontSize: 30 ,fontFamily: 'MoreSugar',right:-10},
         }}
       />
 

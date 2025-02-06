@@ -13,7 +13,7 @@ const menu = () => {
     return (
         <View style={GlobalStyles.contenedorMenu}>
 
-            <View style={{ backgroundColor: 'white', width: '100%',height:'100%', alignItems: "center" }}>
+            <View style={{width: '100%',height:'100%', alignItems: "center" }}>
 
                 <Text style={GlobalStyles.textoSeccion}>FUNCIONES</Text>
                 <View style={{ flexDirection: 'row', columnGap: 20, }}>
@@ -22,6 +22,11 @@ const menu = () => {
                             source={require("../../assets/images/patitasRescate.png")}
                             style={GlobalStyles.imagenesMenu}
                         ></Image>
+                        <View style={GlobalStyles.Subtexto}>
+                            <Text>Patitas al</Text>
+                            <Text> rescate</Text>
+                        </View>
+                        
                     </Pressable>
 
                     <Pressable onPress={() => { Alert.alert('Infórmate de más pulsando sobre Comunidad Animal') }}>
@@ -29,6 +34,11 @@ const menu = () => {
                             source={require("../../assets/images/patitasMarcha.png")}
                             style={GlobalStyles.imagenesMenu}
                         ></Image>
+                        <View style={GlobalStyles.Subtexto}>
+                            <Text>Patas en marcha</Text>
+                            
+                        </View>
+                        
                     </Pressable>
 
                     <Pressable onPress={() => { router.push('/drawer/refugio') }}>
@@ -36,6 +46,10 @@ const menu = () => {
                             source={require("../../assets/images/refugio.png")}
                             style={GlobalStyles.imagenesMenu}
                         ></Image>
+                        <View style={GlobalStyles.Subtexto}>
+                            <Text>Refugio de</Text>
+                            <Text>patitas</Text>
+                        </View>
                     </Pressable>
 
 
@@ -49,6 +63,10 @@ const menu = () => {
                             source={require("../../assets/images/comunidad.png")}
                             style={GlobalStyles.imagenesMenu}
                         ></Image> 
+                        <View style={GlobalStyles.Subtexto}>
+                            <Text>Comunidad</Text>
+                            <Text>animal</Text>
+                        </View>
                     </Pressable>
 
 
@@ -57,6 +75,10 @@ const menu = () => {
                             source={require("../../assets/images/sobrePetconnect.png")}
                             style={GlobalStyles.imagenesMenu}
                         ></Image>
+                        <View style={GlobalStyles.Subtexto}>
+                            <Text>Sobre</Text>
+                            <Text>Petconnect</Text>
+                        </View>
                     </Pressable>
 
 

@@ -40,11 +40,11 @@ export const GlobalStyles = StyleSheet.create({
     },
     //botones -------------------------------------------
     boton: {
-        width: 125,
-        height: 100,
+        width: 150,
+        height: 50,
         textAlign: 'center',
         padding: 0,
-        fontSize: 17,
+        fontSize: 12,
         borderRadius: 30,
         backgroundColor: Colors.orangeInput,
         opacity: 0.7,
@@ -57,9 +57,9 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Colors.orangeButton,
         color: Colors.blueText,
         textAlign: 'center',
-        padding: 15,
+        padding: 5,
         width: 'auto',
-        height: 59,
+        height: 30,
     },
     botonGris:
     {
@@ -78,12 +78,12 @@ export const GlobalStyles = StyleSheet.create({
     logoLogin: {
         width: 100,
         height: 100,
-        left: -20,
+        left: -15,
         resizeMode: "contain",
         marginLeft: 45,
     },
     header: {
-        marginTop: 40,
+        marginTop: 20,
         flexDirection: "row",
         alignItems: "center",
         justifyContent: "center",
@@ -91,7 +91,7 @@ export const GlobalStyles = StyleSheet.create({
     },
     Titulo: {
         fontSize: 35,
-        right: -25,
+        right: -35,
         fontWeight: "bold",
         fontFamily: 'MoreSugar',
         color: Colors.white,
@@ -108,6 +108,7 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Colors.white,
         padding: 20,
         width: "100%",
+        marginTop:-50,
         marginBottom: 50,
         position: "relative",
     },
@@ -126,37 +127,34 @@ export const GlobalStyles = StyleSheet.create({
         color: Colors.white,
     },
     perroGato: {
-        width: 240,
-        height: 240,
-        marginBottom: 30,
+        width: '60%',
+        marginBottom: 0,
         resizeMode: "contain",
-        marginTop: -80,
+        marginTop: '-41%',
     },
     textoAccede: {
         fontSize: 40,
-        fontWeight: 'bold',
         textAlign: "center",
         fontFamily: 'MoreSugar',
-        marginTop: 20,
-        marginBottom: 20,
+        marginTop: 0,
+        marginBottom:15,
         color: Colors.blueText,
     },
     input: {
         borderRadius: 30,
         padding: 15,
-        fontSize: 20,
-        width: 350,
+        fontSize: 14,
+        fontFamily:'MoreSugar',
+        width: 270,
         margin: 10,
         opacity: 0.7,
         marginBottom: 10,
         backgroundColor: Colors.orangeInput,
     },
     olvidarContra: {
-        fontSize: 15,
+        fontSize: 14,
         color: Colors.grey,
-        marginBottom: 0,
-        marginTop: 10,
-        right: -90,
+        right: -60,
         fontFamily: 'MoreSugar',
         textDecorationLine: "underline",
     },
@@ -173,16 +171,17 @@ export const GlobalStyles = StyleSheet.create({
         width: 50,
         height: 40,
         alignSelf: 'flex-start',
-        right: -60,
-        transform: [{ rotate: '-15deg' }, { translateY: 6 }],
+        right: -45,
+        transform: [{ rotate: '-15deg' }, { translateY: 5 }],
         zIndex: 10,
     },
-    pataAbajo: {
-        width: 40,
+    pataArribaReg: {
+        width: 50,
         height: 40,
-        alignSelf: 'flex-end',
-        marginRight: 14,
-        transform: [{ rotate: '45deg' }],
+        alignSelf: 'flex-start',
+        right: -55,
+        transform: [{ rotate: '-15deg' }, { translateY: 5 }],
+        zIndex: 10,
     },
     //PANTALLA DE Registro------------------------------------
     contenedorGrisOscuro: {
@@ -200,6 +199,7 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Colors.white,
         padding: 20,
         width: "100%",
+        top:-20,
         marginBottom: 0,
         position: "relative",
     },
@@ -229,11 +229,13 @@ export const GlobalStyles = StyleSheet.create({
 
     },
     perroGatoReg: {
-        width: 259,
-        height: 210,
+        
         position: 'absolute',
         alignSelf: 'center',
-        top: 120,
+        top: -10,
+        width: '50%',
+        resizeMode: "contain",
+        
     },
     contenedorBotones: {
         flexDirection: 'row',
@@ -242,6 +244,7 @@ export const GlobalStyles = StyleSheet.create({
     },
     textoAccedeARefugio: {
         color: Colors.blueText,
+        
         bottom: 5,
         fontSize: 20,
         fontFamily: 'MoreSugar',
@@ -250,19 +253,21 @@ export const GlobalStyles = StyleSheet.create({
     //menu----------------------------------------
     textoSeccion: {
         color: Colors.white,
-        padding: 10,
+        padding: 5,
         backgroundColor: Colors.blueDark,
         borderRadius: 50,
-        fontFamily: 'MoreSugar',
         fontSize: 14,
         width: 150,
-        left: -125,
+        left: '-25%',
         textAlign: 'left',
         margin: 20,
     },
+    Subtexto:{
+        alignItems: "center",
+    },
     contenedorMenu: {
         marginTop: 0,
-        backgroundColor: Colors.blueDark,
+        backgroundColor: Colors.blueLight,
         alignItems: 'center',
         justifyContent: 'center',
         flex: 1,
@@ -275,8 +280,8 @@ export const GlobalStyles = StyleSheet.create({
         marginBottom: 46,
     },
     imagenesMenu: {
-        width: 100,
-        height: 100,
+        width: 80,
+        height: 80,
         margin: 10,
         borderRadius: 5,
     },
@@ -360,8 +365,8 @@ export const GlobalStyles = StyleSheet.create({
     textoInicioUbi: {
         textAlign:'center',
         color: Colors.blueText,
-        fontSize: 16,
-        padding: 15,
+        fontSize: 14,
+        padding: 10,
         marginLeft: 15,
     },
     textoinfoUbi: {
@@ -436,14 +441,18 @@ export const GlobalStyles = StyleSheet.create({
 
     },
     dameHogar: {
+        paddingVertical:15,
+        marginHorizontal:20
+    },
+    textodameHogar:{
         color: 'white', 
-        fontSize: 18, 
-        padding: 10, 
+        fontSize: 14, 
+        padding: 0, 
         backgroundColor: Colors.blueDark,
         borderRadius: 12,
         textAlign: 'center',
-        paddingVertical:25,
-        marginHorizontal:20
+        paddingVertical:15,
+        top:-20,
     },
     contenedorPerros: {
         backgroundColor: Colors.naranja,
@@ -453,10 +462,12 @@ export const GlobalStyles = StyleSheet.create({
     },
     iconoUbi: {
         color: Colors.blueText,
+        right:-12,
+        top:-10,
     },
     iconoCorazon: {
         color: Colors.blueText,
-        top: -9,
+        
         position: 'absolute',
         right: 15,
     },
@@ -471,8 +482,8 @@ export const GlobalStyles = StyleSheet.create({
         width: 80,
         height: 80,
         alignItems: 'center',
-        
-        marginHorizontal: 22,
+        display:'flex',
+        marginHorizontal: 13,
     },
     datosPerro: {
         fontFamily: 'MoreSugar',
@@ -485,8 +496,8 @@ export const GlobalStyles = StyleSheet.create({
     },
     cuadroAna:{
         backgroundColor:Colors.naranja,
-        padding: 10, 
-
+        
+        height:'35%',
         borderRadius: 12,
         textAlign: 'center',
         marginVertical:20,
@@ -505,8 +516,8 @@ export const GlobalStyles = StyleSheet.create({
     nombreAna: {
         
         color: Colors.blueText,
-        fontSize: 15,
-        padding: 5
+        fontSize: 12,
+        padding: 4,
     },
     iconoPerros: {
         backgroundColor: Colors.naranja,

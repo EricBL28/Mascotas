@@ -31,7 +31,7 @@ const LayoutDrawer = () => {
     title:"INICIO",
     headerTitleStyle: { color: 'white', fontSize: 40 ,fontFamily: 'MoreSugar',right:-70},
   }}
-/>;
+/>
 
       <Drawer.Screen
         name="refugio/perros/index" 
@@ -74,35 +74,6 @@ const LayoutDrawer = () => {
           headerTitleStyle: { color: 'white', fontSize: 30 ,fontFamily: 'MoreSugar',right:-10},
         }}
       />
-
-      
-
-      <Drawer.Screen
-        name="login/index" 
-        options={{
-          drawerLabel: '',
-          
-        }}
-        
-      />
-      <Drawer.Screen
-        name="productos/index" 
-        options={{
-          drawerLabel: '',
-          
-        }}
-        
-      />
-      <Drawer.Screen
-        name="configuracion/configuracion" 
-        options={{
-          drawerLabel: '',
-          
-        }}
-        
-      />
-      
-      
       
       
     </Drawer>
